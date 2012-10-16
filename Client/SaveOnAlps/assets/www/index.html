@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>My first web app</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" />
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<!-- jquery-->
+<link text="text/javascript" href="jquery-ui.min.js"/>
+
+</head>
+
+
+<body>
+	<header>
+		<section id="logo">
+			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
+		</section>
+	</header>
+				<!--Route eintragen Button -->
+				
+				
+				<a href="route_eintrag.html">
+				<button id="route_eintragen" class="interaction">
+				Route eintragen
+				</button></a>
+				
+				<!--Gruppe bilden und Notfallkontakt Buttons -->
+				<section id="further">
+				<button id="gruppe" class="interaction">
+				Gruppe bilden
+				</button>
+				<hr> </hr>
+				<button id="notfall" class="interaction">
+				Notfallkontakt<br/>
+				<span class="smaller">Max Mustermann, +432567..</span>
+				
+				</button>
+				</section>			
+				
+		
+
+		
+		
+		<footer>
+		<button id="route_starten" disabled onclick="openmain()">
+		<p class="route">Route starten</p>
+		</button>
+		</footer>
+
+
+<script type="text/javascript"> 
+if(window.localStorage.getItem("route_id")!=null)
+{
+	console.log("***************Geht scho, route kann gestartet werden!*********");
+	document.getElementById("route_starten").disabled=false;
+}
+
+</script>
+		
+</body>
+</html>

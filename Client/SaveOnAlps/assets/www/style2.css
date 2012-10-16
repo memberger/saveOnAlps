@@ -1,0 +1,22 @@
+body,html{
+margin:0 auto; /* center, not in IE5 */
+color: black;
+height:100%; /* IE6: treaded as min-height*/
+
+}
+
+section#interaction{
+
+min-height: 50%; /* Mindesthöhe für moderne Browser */
+height:auto !important; /* Important Regel für moderne Browser */
+height:50%; /* Mindesthöhe für den IE */
+overflow: hidden !important; /* FF Scroll-leiste */
+background-color: blue;
+margin-bottom: 3px; 
+}
+
+footer{
+height: 10%;
+background-color: green;
+
+}

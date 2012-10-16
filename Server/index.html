@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="script.js"> </script>
+<script type="text/javascript">
+
+
+function HandleRouteResponse(response)
+{
+	route_id=response;
+	document.getElementById('ResponseDiv').innerHTML = "";
+	document.getElementById('ResponseDiv').innerHTML = response;
+}
+function HandleLocationResponse(response)
+{
+	
+	document.getElementById('ResponseDiv').innerHTML = "";
+	document.getElementById('ResponseDiv').innerHTML = response;
+}
+
+</script>
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<div id='ResponseDiv'>
+      Hier werden die Rückmeldungen angezeigt
+    </div><br />
+
+<h3> neue route</h3>
+Start: <input type="text" id="start" value="Teststart" /><br />
+Über: <input type="text" id="ueber" value="testüber"/><br />
+Ziel: <input type="text" id="ziel" value="testziel"/><br />
+
+<button name="submit" onclick="insertRouteRequest()" value="Request">Route eintragen</button>
+<br />
+<h3>Ort eintragen (insert location)</h3>
+long: <input type="text" id="long" value="7.55555" /><br />
+lat: <input type="text" id="lat" value="8.555555"/><br />
+accuracy: <input type="text" id="accu" value="88.5"/><br />
+
+<button name="submit" onclick="insertLocationRequest()" value="Request">Route eintragen</button>
+</body>
+</html>

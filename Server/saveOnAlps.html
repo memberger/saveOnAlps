@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>saveOnAlps</title>
+	<link type="text/css" href="assets_web/css/style.css" rel="stylesheet"/>
+</head>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+<body>
+
+	<header>
+		<section id="logo">
+			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
+		</section>
+	</header>
+	
+	<h1>Aktuelle Route</h1>
+	<section id="route">
+	
+	</section>
+	
+	<h1>Aktuelle Position</h1>
+	<section id="location">
+
+	</section>
+	
+	<div id="map"></div>
+	
+	<h1>Notfallkontakt</h1>
+	<section id="notfallkontakt">
+
+	</section>
+	
+	<h1>Notfall</h1>
+	<section id="notfall">
+	<p>aktuell kein Notfall</p>
+
+	</section>
+	<div id="map-notfall"></div>
+	
+	<h1>Aufgezeichnete Route anzeigen</h1>
+	<form id="form-ID-eingabe">
+	Routep ID<input id="form-routeID" type="number"/>
+	<input type="button" value="anzeigen" onclick="routeAnzeigen()" />
+		
+	
+	
+	
+	
+	
+	</form>
+	
+	<div id="map-route"></div>
+	
+	
+	
+<script type="text/javascript">
+
+var locations = 0;
+
+var lastNotruf;
+
+
+
+
+update();
+
+var interval = self.setInterval("update()", 4000);
+
+var lastLocation = new Date();
+var lastNotfall  = new Date();
+lastLocation = lastLocation.getTime();
+lastNotfall  = lastNotfall.getTime();
+
+
+
+
+
+
+function render(json){
+
+console.log(json);
+
+
+var currentTimeLocation = Date.parse(json.location_time);
+
+
+
+if(currentTimeLocation > lastLocation){
+
+var el = document.getElementById("location");
+var tn = document.createTextNode("Time: "+json.location_time+", Longitude: "+json.location_long+", Latitude: "+json.location_lat+", Accuracy: "+json.location_accu+", Battery: "+json.location_battery+", Connection: "+json.location_connection+"");
+var ptag = document.createElement('p');
+ptag.appendChild(tn);
+el.appendChild(ptag);
+
+var latlng = new google.maps.LatLng(json.location_lat, json.location_long);
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"),
+        myOptions);
+
+	marker = new google.maps.Marker({
+	
+	position: latlng,
+	map: map
+	
+	});
+	circle = new google.maps.Circle({
+ 	map: map,
+  	radius: Number(json.location_accu),    
+	fillColor: '#AA0000'
+	});
+	circle.bindTo('center', marker, 'position');
+
+
+
+
+}
+
+
+lastLocation = currentTimeLocation;
+
+var el = document.getElementById("route");
+
+while(el.firstChild){
+
+	el.removeChild(el.firstChild);
+
+}
+
+var tn = document.createTextNode("Start: "+json.route_start+", Über: "+json.route_ueber+", Ziel: "+json.route_ziel+"");
+var ptag = document.createElement('p');
+ptag.appendChild(tn);
+el.appendChild(ptag);
+
+
+var el = document.getElementById("notfallkontakt");
+
+while(el.firstChild){
+
+	el.removeChild(el.firstChild);
+
+}
+
+var tn = document.createTextNode("Vorname: "+json.notfall_vorname+", Nachname: "+json.notfall_nachname+", Tel: "+json.notfall_tel+", Mail: "+json.notfall_mail+"");
+var ptag = document.createElement('p');
+ptag.appendChild(tn);
+el.appendChild(ptag);
+
+var currentTimeNotfall = Date.parse(json.notfall_time);
+
+if(currentTimeNotfall > lastNotfall){
+
+
+var el = document.getElementById("notfall");
+while(el.firstChild){
+
+	el.removeChild(el.firstChild);
+
+}
+var tn = document.createTextNode("Time: "+json.notfall_time+", UserID: "+json.notfall_user+", Notfall-Long: "+json.notfall_long+", Notfall-Lat: "+json.notfall_lat+", Notfall-Accu: "+json.notfall_accu);
+var ptag = document.createElement('p');
+ptag.appendChild(tn);
+el.appendChild(ptag);
+
+
+var latlng = new google.maps.LatLng(json.notfall_lat, json.notfall_long);
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    
+    var map = new google.maps.Map(document.getElementById("map-notfall"),
+        myOptions);
+
+	marker = new google.maps.Marker({
+	
+	position: latlng,
+	map: map
+	
+	});	
+	circle = new google.maps.Circle({
+ 	map: map,
+  	radius: Number(json.notfall_accu),    
+	fillColor: '#AA0000'
+	});
+	circle.bindTo('center', marker, 'position');
+
+}
+
+lastNotfall = currentTimeNotfall;
+
+
+
+
+
+
+
+}
+
+
+
+
+function update(){
+
+
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if(xmlhttp.readyState==4){
+        var json=JSON.parse(xmlhttp.responseText);
+        render(json);
+
+    }
+ };
+xmlhttp.open("GET","update_save_on_alps.php",true);
+xmlhttp.send(null);
+
+
+
+
+}
+
+function routeAnzeigen(){
+
+var routeID = document.getElementById("form-routeID").value;
+
+
+
+
+var xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if(xmlhttp.readyState==4){
+        var json=JSON.parse(xmlhttp.responseText);
+        renderRoute(json);
+
+    }
+ };
+xmlhttp.open("GET","show_route.php?routeID="+routeID,true);
+xmlhttp.send(null);
+
+
+
+}
+
+function renderRoute(json){
+	
+	console.log(json);
+	
+	var centerPos = Math.round(json.length/2);
+	console.log(centerPos);
+	
+	var latlng = new google.maps.LatLng(json[centerPos].lat, json[centerPos].long);
+    var myOptions = {
+      zoom: 8,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    
+    var map = new google.maps.Map(document.getElementById("map-route"),
+        myOptions);
+	
+	
+
+	for (var count = 0; count < json.length; count++){
+	
+		var latlng = new google.maps.LatLng(json[count].lat, json[count].long);
+		
+		marker = new google.maps.Marker({
+	
+		position: latlng,
+		map: map
+	
+		});	
+		circle = new google.maps.Circle({
+ 		map: map,
+  		radius: Number(json[count].accu),    
+		fillColor: '#AA0000'
+		});
+		circle.bindTo('center', marker, 'position');
+	
+	
+	}	
+	
+	
+	
+	
+
+
+
+}
+
+
+
+
+
+
+
+</script>	
+</body>
+</html>

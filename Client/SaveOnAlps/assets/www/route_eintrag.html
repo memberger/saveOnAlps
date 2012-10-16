@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>My first web app</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" />
+
+<!-- Thomas -->
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<link text="text/javascript" href="jquery-ui.min.js"/>
+
+</head>
+
+<body>
+	<header>
+		<section id="logo">
+			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
+		</section>
+	</header>
+				
+				
+				<!--Route Eintragen -->
+				<section id="eintrag">
+				<form>
+				<label>Start:</label>
+				<input type="text" name="start" placeholder="Startpunkt"/> 
+				<label>Verlauf:</label>
+				<textarea name="verlauf" autocorrect placeholder="Routenbeschreibung, Anhaltspunkte"> 
+				
+				</textarea>
+				<label>Ziel:</label>
+				<input type="text" name="ziel" placeholder="Endpunkt"/>
+				</form>
+				
+				
+				</section>	
+						
+				
+		
+
+		
+		
+		<footer>
+		<!--<a href="index.html">-->
+        <button id="speichern" onClick="insertRouteRequest()">
+		<p>Speichern</p>
+		</button>
+        <!--</a>-->
+		</footer>
+		<script type="text/javascript"> checkLocalStorage_Route();</script>
+		
+</body>
+</html>

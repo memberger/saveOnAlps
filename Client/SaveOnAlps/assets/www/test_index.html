@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+    
+<script type="text/javascript">
+
+
+
+</script>
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+<div id='ResponseDiv'>
+      Hier werden die Rückmeldungen angezeigt
+</div><br />
+<p id='indikator'></p>
+
+
+
+
+
+
+<section id="new_route">
+<h3> neue route</h3>
+Start: <input type="text" id="start" value="Teststart" /><br />
+Über: <input type="text" id="ueber" value="testÃ¼ber"/><br />
+Ziel: <input type="text" id="ziel" value="testziel"/><br />
+
+<button name="submit" onclick="insertRouteRequest()" value="route_request">Route eintragen</button>
+</section>
+
+
+<section id="add_loc" hidden>
+
+
+
+
+<button name="notfall" onclick="sendNotfall()" value="loc_request">Notfall Button</button>
+
+<button name="submit" onclick="startLocationdingens()" value="loc_request">Location eintragen</button>
+
+</section>
+<p id="geolocation">
+</p>
+<br />
+</body>
+</html>
