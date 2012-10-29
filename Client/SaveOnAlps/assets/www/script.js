@@ -71,7 +71,15 @@ function onDeviceReady() {
 	 //Bei der index soll vorm beenden der app noch der localstorage gelöscht werden!
 	 if(document.URL.split('/')[document.URL.split('/').length-1]=="index.html")
 	 {
+	  //WS2012: getUserbyId if localstorage userid is set
+	  if(window.localStorage.getItem("user_id")!=null)
+	  {
+		  //Hole User by userid aus Datenbank und überspringe loginmaske
+	  }
+	  
+	  
 	 document.addEventListener("backbutton", backKeyDown_index, false);
+	 
 	 //alert("device ready!");
 	 }
 	 else
@@ -111,9 +119,13 @@ function backKeyDown_index() {
 
 function onBeendenAntwort(buttonIndex) {
     if(buttonIndex == 1){
+		//username passwort aus localstorage auslesen, in variable speichern und dann neu in den local storage geben
+		var user_id=window.localStorage.getItem("user_id");
 		window.localStorage.clear();
-    console.log("Wird beendet");
-    navigator.app.exitApp();
+		window.localStorage.setItem("user_id",user_id);
+		
+    	console.log("Wird beendet");
+    	navigator.app.exitApp();
 	
     }else if(buttonIndex == 2){
     

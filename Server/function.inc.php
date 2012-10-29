@@ -30,6 +30,82 @@ function checkLogin($user,$pw){
 	}
 }
 
+function insertUser($user_object)
+{
+	try{
+		
+		$db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME,DB_USER,DB_PASSWORD);
+			
+		} catch (PDOException $e){
+		echo "Verbindung fehlgeschlagen";
+		die();
+		}
+		$test=$db->query( "select MAX(user_id) from user" );
+		$result = $test -> fetch();
+		$new_user_id=$result['MAX(user_id)']+1;	
+		
+		$sql = "INSERT INTO `".DB_NAME."`.`user` (user_id,user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land)
+		VALUES (".$new_user_id.", '$user_object->user_name','$user_object->user_pwd','$user_object->vorname','$user_object->nachname','$user_object->tel','$user_object->email','$user_object->strasse','$user_object->hausnummer','$user_object->plz','$user_object->ort','$user_object->land');";
+		
+			$db->exec($sql);
+		
+		return $new_user_id;
+}
+function getUserById($user_object)
+{
+	try{
+		
+		$db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME,DB_USER,DB_PASSWORD);
+			
+		} catch (PDOException $e){
+		echo "Verbindung fehlgeschlagen";
+		die();
+		}
+		$test=$db->query( "select user_id,user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land from user where user_id='$user_object->user_id'" );
+		$result = $test -> fetch();
+		
+		$read_user=array(
+		'user_id'=>$result['user_id'],
+		'user_name'=>$result['user_name'],
+		'vorname'=>$result['nachname'],
+		'tel'=>$result['tel'],
+		'email'=>$result['email'],
+		'strasse'=>$result['strasse'],
+		'hausnummer'=>$result['hausnummer'],
+		'plz'=>$result['plz'],
+		'ort'=>$result['ort'],
+		'land'=>$result['land']		
+		);
+		return json_encode($read_user);
+}
+function getUserByUsernamePassword($user_object)
+{
+	try{
+		
+		$db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME,DB_USER,DB_PASSWORD);
+			
+		} catch (PDOException $e){
+		echo "Verbindung fehlgeschlagen";
+		die();
+		}
+		$test=$db->query( "select user_id,user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land from user where user_name='$user_object->user_name' AND password='$user_object->password'" );
+		$result = $test -> fetch();
+		
+		$read_user=array(
+		'user_id'=>$result['user_id'],
+		'user_name'=>$result['user_name'],
+		'vorname'=>$result['nachname'],
+		'tel'=>$result['tel'],
+		'email'=>$result['email'],
+		'strasse'=>$result['strasse'],
+		'hausnummer'=>$result['hausnummer'],
+		'plz'=>$result['plz'],
+		'ort'=>$result['ort'],
+		'land'=>$result['land']		
+		);
+		return json_encode($read_user);
+}
+
 function insertRoute($start,$ueber,$ziel,$user_id){
 		try{
 		
