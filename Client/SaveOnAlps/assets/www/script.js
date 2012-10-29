@@ -58,6 +58,12 @@ function HandleNotfallResponse (response)
 	//alert(response);
 }
 
+function HandleLoginResponse(response)
+{
+	//2012 to do
+	//Daten vom Login kommen mit folgendem index zurück: user_id,user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land
+}
+
 // Wait for Cordova to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -74,6 +80,7 @@ function onDeviceReady() {
 	  //WS2012: getUserbyId if localstorage userid is set
 	  if(window.localStorage.getItem("user_id")!=null)
 	  {
+		  loginRequest({"user_id":window.localStorage.getItem("user_id")});
 		  //Hole User by userid aus Datenbank und überspringe loginmaske
 	  }
 	  
@@ -132,6 +139,22 @@ function onBeendenAntwort(buttonIndex) {
     	
     
     }
+}
+
+function login(username,password)
+{
+	if(username!=""&&username!=null&&password!=""&&password!=null)
+	{
+	loginRequest({"user_name":username, "password":password});
+	}
+	else
+	{
+		alert("Username/Password überprüfen");
+	}
+}
+function register(user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land)
+{ //user_id,user_name,user_pwd,vorname,nachname,tel,email,strasse,hausnummer,plz,ort,land
+	registerRequest({"user_name":user_name,"user_pwd":user_pwd,"vorname":vorname,"nachname":nachname,"tel":tel,"email":email,"strasse":strasse,"hausnummer":hausnummer,"plz":plz,"ort":ort,"land":land});
 }
 	
 function startLocationdingens()
@@ -201,6 +224,33 @@ function getXMLHttp()
     }
   }
   return xmlHttp;
+}
+
+function loginRequest(json)
+{
+	var xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("POST","http://mt102002.students.fhstp.ac.at/saveOnAlps/login.php",true);
+        xmlhttp.onreadystatechange=function(){
+                if(xmlhttp.readyState==4){
+                        HandleLoginResponse(xmlhttp.responseText);
+                }
+        }
+		//console.log(drumkitArray);
+		console.log("login wurde gesendet");
+		xmlhttp.send(JSON.stringify(json));
+}
+function registerRequest(json)
+{
+	var xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("POST","http://mt102002.students.fhstp.ac.at/saveOnAlps/register.php",true);
+        xmlhttp.onreadystatechange=function(){
+                if(xmlhttp.readyState==4){
+                        HandleLoginResponse(xmlhttp.responseText);
+                }
+        }
+		//console.log(drumkitArray);
+		console.log("register wurde gesendet");
+		xmlhttp.send(JSON.stringify(json));
 }
 
 function insertRouteRequest()
