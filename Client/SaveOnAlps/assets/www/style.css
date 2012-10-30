@@ -94,6 +94,10 @@ p.route_eintrag{
 margin-left: 1em; 
 }
 
+section#suchergebnisse{
+background-color: white;
+}
+
 .blue{
 color: #007dc5;
 

@@ -2,34 +2,67 @@
 <html lang="de">
 <head>
 <title>My first web app</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scailable=0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" />
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.ie.css" />
+<![endif]-->
+
+<script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
+
+<!-- Thomas -->
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+<script type="text/javascript" src="map_script.js"> </script>
 
 
-<link rel="stylesheet" href="style2.css" type="text/css"/>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<link text="text/javascript" href="jquery-ui.min.js"/>
 
 </head>
 
 <body>
-		<section id="interaction">
-		
+	<header>
+		<section id="logo">
+			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
+		</section>
+	</header>
+				<section id="suche">
+					<form onSubmit="return false;">
+						<input id = "suchfeld" type="text" name="adresse" />
+						<input  type="button" name="suche" value="Suchen" onclick="ergebnisse()" /> 
+					</form>
+				</section>
+				<section id="suchergebnisse">
+				
+				</section>
+				<section id="karte">
+				
+				<!--Hier die Karte einbinden!!!!!! -->	
+				<div id="map_canvas">
 			
-			<p>
-			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
-
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.   
-
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
-			</p>	
+				</div>
+				
+				</section>	
+						
+				
 		
-     </section>	
+
 		
 		
 		<footer>
-		Test
+		<a href="index.html">
+        <!--<button id="speichern" onClick="insertRouteRequest()">-->
+		<button id="speichern">
+		<p>Speichern</p>
 		</button>
+        </a>
 		</footer>
+		<!--<script type="text/javascript"> checkLocalStorage_Route();</script>-->
+		<script type="text/javascript"> init_osm(); </script>
+		
 </body>
 </html>
