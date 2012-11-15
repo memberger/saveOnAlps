@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- html 5 -->
+<html>
+<head>
+<title>Eule</title>
+<meta charset="utf-8" />
+
+<!--  <meta name="viewport" content = "width = device-width user-scalable = no">-->
+<meta name = "viewport" content = "width = device-width, maximum-scale = 1, minimum-scale = 1, user-scalable = no">
+
+
+<meta name = "apple-mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="http://lamp2.fhstp.ac.at/~lbz/beispiele/ws2012/gps/leaflet.css" />
+
+<script type="text/javascript" src="http://lamp2.fhstp.ac.at/~lbz/beispiele/ws2012/gps/leaflet.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+<h1>Neuen GPX Track in Datenbank speichern</h1>
+<p>Zum Testen gibt es <a href="https://www.dropbox.com/s/gy5rs3wskcnbjbb/gpx-testdaten.zip" target="_blank">hier</a> ein paar .gpx routen! das objekt ist via route in der console erreichbar! 
+
+<form>
+<p>Route-Name:<input id="route-name" type="text"></p><hr>
+<p>GPX-Datei: <input name="File" id="gpx-file" type="file"></p><hr>
+<p>Text zur Route ( optional )</p> <textarea id="route-text" style="height: 100px; width:600px;"></textarea> 
+
+</form>
+<p><button onmousedown="saveXML()">Senden</button></p>
+
+<div id="info-box"></div>
+
+<div id="map" style="width:600px;height:400px;position:relative;display:block;visibility:hidden;float:left; border:1px solid red;"></div>
+
+
+
+
+<script type="text/javascript" src="neueRoute_GPX.js"  charset="UTF-8"> </script>
+</body>
