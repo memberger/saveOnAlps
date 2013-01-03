@@ -102,22 +102,23 @@ class Main
 					break;
 			case 'requestGpx':
 					{
-						$ret=Main::getGPX($obj['coords']);
-						if(!is_numeric($ret))
+						$ret=Main::getGPX($obj['coords']['lat'],$obj['coords']['lon']);
+						if(is_numeric($ret))
 						{
-						  $data = array('success'=>false);
+						  $data = array('success'=>false, 'type'=>'requestGpx', 'ret'=>$ret);
 					  	}
 					  	else
 					  	{
 						  
 						  $data=$ret;
 					 	}
+						break;
 					}
 			case 'eigeneRoute':
 					$ret=Main::insertOwnRoute($obj);
 					if(!is_numeric($ret))
 						{
-						  $data = array('success'=>false);
+						  $data = array('success'=>false, 'type'=>'ownRoute');
 					  	}
 					  	else
 					  	{
@@ -127,7 +128,7 @@ class Main
 					 	}
 					break;
 			default: 
-					$data=array('success'=>false, 'data'=>$obj);
+					$data=array('success'=>false,'type'=>$type, 'data'=>$obj);
 					break;
 			
 			
@@ -247,18 +248,17 @@ class Main
 	
 	
 	
-	public static function getGPX($obj)
+	public static function getGPX($lat, $lon)
 	{
 		$con = db_connect();
 		
 		if(!is_string($con))
 		{	//
-				$query = $con->prepare("Select * from predefinedRoute where maxLatitude>= ? AND maxLongitude>=? AND minLatitude<=? AND min Longitude<=?");
-			
-				$statement = $con->prepare($query);
-				$statement->execute(array($obj['lat'],$obj['lon'],$obj['lat'],$obj['lon']));
+		
+				$statement = $con->prepare("Select * from predefinedRoute where maxLatitude>= ? AND maxLongitude>=? AND minLatitude<=? AND minLongitude<=?");
+				$statement->execute(array($lat,$lon,$lat,$lon));
 				$result = $statement;
-				$data=array(success=>true,'routes'=>array());
+				$data=array('routes'=>array());
 				$i=0;
 				while($row = $result->fetch(PDO::FETCH_ASSOC))
 				{	
@@ -269,23 +269,27 @@ class Main
 					$pminLat=$row['minLatitude'];
 					$pminLon=$row['minLongitude'];
 					$data['routes'][$i]=array('id'=>$pRouteID,'name'=>$pRouteName);
+					$data['success']=true;
 					
-					
-					$newquery = $con->prepare("Select latitude,longitude from location join predefinedPoint on idlocation=location_idlocation where predefinedRoute_idpredefineRoute=? ORDER BY pointNr ASC");
+					$newquery = "Select latitude,longitude from location join predefinedPoint on idlocation=location_idlocation where predefinedRoute_idpredefinedRoute=? ORDER BY pointNr ASC";
 					
 					$newstatement = $con->prepare($newquery);
 					$newstatement->execute(array($pRouteID));
-					$result = $statement;
+					$newresult = $newstatement;
 		
-					while($locrow = $result->fetch(PDO::FETCH_ASSOC))
+					while($locrow = $newresult->fetch(PDO::FETCH_ASSOC))
 					{	
 							
-							array_push($data['routes'][$i]['coords'],array('lat'=>$locrow['latitude'],'long'=>$locrow['longitude']));	
+							$data['routes'][$i]['coords'][]=array('lat'=>$locrow['latitude'],'long'=>$locrow['longitude']);	
 							//$locrow['latitude'].$locrow['longitude'];
 					}
 					
 					
 					$i++;
+				}
+				if($i==0)
+				{
+					$data['success']=false;
 				}
 				
 				return $data;

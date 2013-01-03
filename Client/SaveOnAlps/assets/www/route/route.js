@@ -269,7 +269,41 @@ function render(jsonstring){
 	
 }
 
+function getRouteAt(latitude, longitude)
+{
+	var json = {  "type":"requestGpx",
+			  "coords":{
+				  "lat":latitude,
+				  "lon":longitude
+			  }};
+	
+	var xmlhttp=new XMLHttpRequest();
+	
+	xmlhttp.onreadystatechange = function() {
+		if(xmlhttp.readyState==4){
+			json=JSON.parse(xmlhttp.responseText);
+	
+			renderGetRouteAtResponse(json)  //daten an die funktion render übergeben (render muss man selbst programmieren)
+	
+		}
+	 };
+	var jsonString = JSON.stringify(json);	
+	xmlhttp.open("POST", "http://flock-0312.students.fhstp.ac.at/server/communicator.php?callback=meins", true);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	//xmlhttp.send("json="+jsonString);
+	console.log(jsonString);
+	xmlhttp.send("json="+jsonString);
+}
 
+function renderGetRouteAtResponse(json)
+{
+	console.log(json);
+}
+
+function meins(json)
+{
+	console.log(json);
+}
 
 
 /*var lat=51;

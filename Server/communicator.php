@@ -22,7 +22,7 @@ if(isset($_POST['json']))
 
 	$data = Main::allocateJSON($json_data['type'],$json_data);
 	
-	echo json_encode($data);
+	echo json_encode($data);//
 	
 }
 
