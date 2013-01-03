@@ -500,7 +500,7 @@ function openmain()
 {
 	
 	 window.localStorage.setItem("route_running","1");
-	document.location.href="main.html";
+	 window.location="index.html";
 }
 function openChangeRoute()
 {

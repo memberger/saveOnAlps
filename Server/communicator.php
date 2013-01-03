@@ -17,11 +17,15 @@ EADERS']}");
 header('Content-type: application/json');
 
 if(isset($_POST['json']))
-{	$json_data = $_POST['json'];
+{	$json_data = json_decode(str_replace("\\","",$_POST['json']),true);
+	//echo $_POST['json'];
 
 	$data = Main::allocateJSON($json_data['type'],$json_data);
 	
 	echo json_encode($data);
+	
 }
+
+
 
 ?>

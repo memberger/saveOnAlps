@@ -1,0 +1,3634 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<gpx
+xmlns="http://www.topografix.com/GPX/1/0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd" version="1.0"
+creator="MAPKon V2.8">
+<time>2009-06-22T11:35:00Z</time>
+<bounds minlat="46.693676" minlon="10.363075" maxlat="46.891301" maxlon="10.542305"/>
+   <trk>
+      <name>Fugawi</name>
+      <cmt>Import</cmt>
+      <desc>Import</desc>
+      <trkseg>
+         <trkpt lat="46.8907860" lon="10.5012990">
+            <ele>1358.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8886190" lon="10.5023930">
+            <ele>1358.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8878030" lon="10.5036380">
+            <ele>1359.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8839620" lon="10.5063200">
+            <ele>1385.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8816880" lon="10.5072210">
+            <ele>1391.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8807220" lon="10.5078440">
+            <ele>1395.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8792630" lon="10.5084010">
+            <ele>1394.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8770310" lon="10.5088310">
+            <ele>1402.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8747780" lon="10.5098180">
+            <ele>1420.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8721390" lon="10.5101610">
+            <ele>1427.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8683410" lon="10.5122420">
+            <ele>1427.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8668820" lon="10.5125640">
+            <ele>1426.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8648220" lon="10.5123280">
+            <ele>1429.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8637920" lon="10.5126500">
+            <ele>1429.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8635130" lon="10.5125640">
+            <ele>1428.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8631910" lon="10.5119420">
+            <ele>1430.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8624620" lon="10.5115990">
+            <ele>1433.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8614750" lon="10.5115990">
+            <ele>1433.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8608090" lon="10.5105900">
+            <ele>1433.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8601870" lon="10.5101400">
+            <ele>1435.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8576120" lon="10.5091520">
+            <ele>1447.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8531060" lon="10.5086370">
+            <ele>1448.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8512820" lon="10.5072430">
+            <ele>1451.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8497160" lon="10.5067920">
+            <ele>1451.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8491360" lon="10.5060200">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8490930" lon="10.5056980">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8462400" lon="10.5059120">
+            <ele>1460.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8457030" lon="10.5067060">
+            <ele>1463.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8451880" lon="10.5071140">
+            <ele>1463.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8439650" lon="10.5072210">
+            <ele>1467.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8438360" lon="10.5070280">
+            <ele>1468.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8415190" lon="10.5070070">
+            <ele>1477.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8416910" lon="10.5050110">
+            <ele>1477.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8416050" lon="10.5047970">
+            <ele>1478.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8411540" lon="10.5047970">
+            <ele>1479.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8408320" lon="10.5051400">
+            <ele>1479.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8394160" lon="10.5057620">
+            <ele>1485.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8360900" lon="10.5082940">
+            <ele>1509.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8349310" lon="10.5086370">
+            <ele>1516.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8336870" lon="10.5096250">
+            <ele>1515.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8314120" lon="10.5108050">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8302110" lon="10.5128860">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8302970" lon="10.5132290">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8299750" lon="10.5134230">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8289880" lon="10.5149030">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8272070" lon="10.5193450">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8263480" lon="10.5202250">
+            <ele>1502.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8249970" lon="10.5205460">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8222070" lon="10.5217050">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8209200" lon="10.5228210">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8194390" lon="10.5248590">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8183660" lon="10.5275200">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8179580" lon="10.5300740">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8177870" lon="10.5303740">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8162200" lon="10.5311470">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8150190" lon="10.5320050">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8143960" lon="10.5326490">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8131730" lon="10.5345580">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8117790" lon="10.5363390">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8114570" lon="10.5372190">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8108770" lon="10.5377560">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8095040" lon="10.5374120">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8092040" lon="10.5371550">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8091390" lon="10.5363390">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8089250" lon="10.5360600">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8068650" lon="10.5361680">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8066720" lon="10.5365970">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8068860" lon="10.5376910">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8061570" lon="10.5402020">
+            <ele>1502.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8061350" lon="10.5409740">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8058350" lon="10.5408240">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8057280" lon="10.5403090">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8055130" lon="10.5400730">
+            <ele>1502.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8041400" lon="10.5401590">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8039250" lon="10.5400300">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8036030" lon="10.5395150">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8034740" lon="10.5382280">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8030880" lon="10.5379270">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8013070" lon="10.5385280">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7994190" lon="10.5397300">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7973800" lon="10.5402880">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7966510" lon="10.5402660">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7963290" lon="10.5418110">
+            <ele>1506.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7956850" lon="10.5418750">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7944620" lon="10.5414460">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7930250" lon="10.5416390">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7923380" lon="10.5414250">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7909650" lon="10.5415320">
+            <ele>1508.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7890330" lon="10.5410170">
+            <ele>1508.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7847420" lon="10.5423050">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7841840" lon="10.5421970">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7827030" lon="10.5406090">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7806860" lon="10.5374770">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7797210" lon="10.5365540">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7793990" lon="10.5364900">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7780690" lon="10.5352020">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7772750" lon="10.5350950">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7756650" lon="10.5345150">
+            <ele>1503.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7740990" lon="10.5347510">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7737990" lon="10.5345580">
+            <ele>1502.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7737340" lon="10.5325840">
+            <ele>1487.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7734340" lon="10.5322840">
+            <ele>1485.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7723820" lon="10.5322410">
+            <ele>1482.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7677050" lon="10.5328850">
+            <ele>1479.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7672540" lon="10.5322620">
+            <ele>1476.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7665670" lon="10.5318120">
+            <ele>1469.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7652370" lon="10.5321340">
+            <ele>1467.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7647220" lon="10.5309750">
+            <ele>1465.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7640780" lon="10.5305030">
+            <ele>1459.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7632840" lon="10.5305890">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7625980" lon="10.5303530">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7619110" lon="10.5297520">
+            <ele>1455.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7611810" lon="10.5294730">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7600870" lon="10.5295160">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7588000" lon="10.5290870">
+            <ele>1455.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7582200" lon="10.5286360">
+            <ele>1455.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7567830" lon="10.5286570">
+            <ele>1453.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7557310" lon="10.5277990">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7552810" lon="10.5284860">
+            <ele>1456.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7550020" lon="10.5285720">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7542080" lon="10.5281850">
+            <ele>1461.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7533710" lon="10.5268770">
+            <ele>1460.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7512470" lon="10.5267910">
+            <ele>1457.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7492720" lon="10.5278850">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7480920" lon="10.5279060">
+            <ele>1459.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7467620" lon="10.5283140">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7461610" lon="10.5285720">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7453890" lon="10.5292370">
+            <ele>1459.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7436930" lon="10.5295370">
+            <ele>1460.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7415260" lon="10.5315540">
+            <ele>1459.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7401960" lon="10.5320050">
+            <ele>1457.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7395520" lon="10.5326490">
+            <ele>1454.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7366980" lon="10.5332490">
+            <ele>1446.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7335440" lon="10.5323050">
+            <ele>1428.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7328140" lon="10.5317690">
+            <ele>1423.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7313770" lon="10.5314680">
+            <ele>1410.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7281800" lon="10.5297300">
+            <ele>1382.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7267630" lon="10.5296450">
+            <ele>1371.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7246390" lon="10.5303100">
+            <ele>1353.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7229650" lon="10.5295370">
+            <ele>1341.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7215490" lon="10.5291510">
+            <ele>1333.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7169140" lon="10.5294940">
+            <ele>1293.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7154120" lon="10.5300310">
+            <ele>1288.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7148970" lon="10.5307600">
+            <ele>1285.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7141890" lon="10.5311040">
+            <ele>1274.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7133740" lon="10.5310180">
+            <ele>1266.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7120860" lon="10.5301600">
+            <ele>1259.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7111420" lon="10.5289150">
+            <ele>1250.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7105840" lon="10.5271770">
+            <ele>1249.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7098120" lon="10.5269190">
+            <ele>1246.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7098550" lon="10.5256100">
+            <ele>1211.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7096400" lon="10.5249020">
+            <ele>1223.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7094260" lon="10.5245810">
+            <ele>1227.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7077300" lon="10.5244730">
+            <ele>1244.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7075590" lon="10.5240660">
+            <ele>1248.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7076020" lon="10.5233790">
+            <ele>1250.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7072800" lon="10.5222420">
+            <ele>1252.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7068290" lon="10.5228640">
+            <ele>1253.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7064860" lon="10.5230780">
+            <ele>1257.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7057560" lon="10.5230570">
+            <ele>1268.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7028810" lon="10.5214260">
+            <ele>1293.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7023230" lon="10.5215550">
+            <ele>1295.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7022160" lon="10.5213830">
+            <ele>1296.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7029240" lon="10.5212980">
+            <ele>1305.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7036100" lon="10.5216620">
+            <ele>1310.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7039540" lon="10.5215760">
+            <ele>1315.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7045120" lon="10.5218340">
+            <ele>1319.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7046400" lon="10.5216410">
+            <ele>1320.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7039750" lon="10.5211690">
+            <ele>1328.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7034820" lon="10.5210610">
+            <ele>1335.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7024950" lon="10.5205040">
+            <ele>1338.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7003490" lon="10.5200530">
+            <ele>1348.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6994910" lon="10.5179720">
+            <ele>1344.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6988680" lon="10.5171350">
+            <ele>1351.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6982030" lon="10.5171780">
+            <ele>1356.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6975810" lon="10.5164270">
+            <ele>1354.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6974090" lon="10.5148820">
+            <ele>1364.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6967870" lon="10.5132080">
+            <ele>1374.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6963790" lon="10.5111050">
+            <ele>1388.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6960790" lon="10.5103330">
+            <ele>1401.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6953710" lon="10.5098180">
+            <ele>1409.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6951560" lon="10.5093240">
+            <ele>1413.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6947910" lon="10.5089810">
+            <ele>1417.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6948990" lon="10.5083590">
+            <ele>1417.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6947270" lon="10.5078860">
+            <ele>1419.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6949630" lon="10.5067280">
+            <ele>1425.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6948560" lon="10.5062340">
+            <ele>1432.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6949630" lon="10.5056980">
+            <ele>1434.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6941480" lon="10.5035950">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6936760" lon="10.5003120">
+            <ele>1460.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6938690" lon="10.4999260">
+            <ele>1459.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6937400" lon="10.4994540">
+            <ele>1460.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6937180" lon="10.4987240">
+            <ele>1462.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6939550" lon="10.4976300">
+            <ele>1461.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6938470" lon="10.4960420">
+            <ele>1464.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6944050" lon="10.4935960">
+            <ele>1465.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6947910" lon="10.4925230">
+            <ele>1468.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6953920" lon="10.4879310">
+            <ele>1479.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6954990" lon="10.4880380">
+            <ele>1471.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6963790" lon="10.4863000">
+            <ele>1490.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6970230" lon="10.4855490">
+            <ele>1504.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6975810" lon="10.4843900">
+            <ele>1523.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6982890" lon="10.4834250">
+            <ele>1544.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6981600" lon="10.4831240">
+            <ele>1545.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6985460" lon="10.4824160">
+            <ele>1557.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6987400" lon="10.4814290">
+            <ele>1567.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6993620" lon="10.4800770">
+            <ele>1591.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.6998980" lon="10.4792400">
+            <ele>1604.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7001340" lon="10.4791550">
+            <ele>1608.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7002850" lon="10.4797980">
+            <ele>1608.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7004990" lon="10.4800130">
+            <ele>1612.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7025590" lon="10.4773520">
+            <ele>1663.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7029670" lon="10.4771810">
+            <ele>1674.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7038040" lon="10.4754850">
+            <ele>1694.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7052200" lon="10.4738980">
+            <ele>1719.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7058640" lon="10.4728890">
+            <ele>1723.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7066360" lon="10.4722240">
+            <ele>1737.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7071720" lon="10.4714730">
+            <ele>1746.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7088030" lon="10.4677180">
+            <ele>1769.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7109280" lon="10.4640480">
+            <ele>1802.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7120430" lon="10.4628250">
+            <ele>1806.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7141250" lon="10.4614090">
+            <ele>1811.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7150260" lon="10.4610870">
+            <ele>1810.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7156480" lon="10.4601220">
+            <ele>1811.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7158410" lon="10.4588340">
+            <ele>1816.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7167430" lon="10.4568170">
+            <ele>1821.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7176220" lon="10.4555300">
+            <ele>1830.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7182230" lon="10.4560660">
+            <ele>1844.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7187380" lon="10.4559800">
+            <ele>1847.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7193170" lon="10.4556160">
+            <ele>1851.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7199830" lon="10.4546930">
+            <ele>1862.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7201970" lon="10.4535990">
+            <ele>1869.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7206690" lon="10.4526760">
+            <ele>1881.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7212060" lon="10.4519680">
+            <ele>1888.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7220000" lon="10.4515390">
+            <ele>1903.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7227510" lon="10.4514310">
+            <ele>1908.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7231150" lon="10.4508520">
+            <ele>1917.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7237380" lon="10.4505730">
+            <ele>1930.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7249180" lon="10.4493930">
+            <ele>1945.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7257980" lon="10.4479980">
+            <ele>1959.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7264630" lon="10.4473760">
+            <ele>1976.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7281580" lon="10.4463890">
+            <ele>2007.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7286300" lon="10.4457660">
+            <ele>2022.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7291020" lon="10.4453160">
+            <ele>2039.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7298320" lon="10.4450370">
+            <ele>2053.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7303040" lon="10.4443290">
+            <ele>2080.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7308400" lon="10.4437490">
+            <ele>2092.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7310760" lon="10.4440280">
+            <ele>2098.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7311190" lon="10.4454230">
+            <ele>2127.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7312050" lon="10.4456590">
+            <ele>2133.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7317630" lon="10.4447580">
+            <ele>2163.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7317410" lon="10.4445000">
+            <ele>2169.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7315050" lon="10.4442860">
+            <ele>2174.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7313770" lon="10.4432560">
+            <ele>2179.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7314410" lon="10.4424190">
+            <ele>2188.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7319780" lon="10.4413890">
+            <ele>2193.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7323210" lon="10.4410670">
+            <ele>2198.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7328360" lon="10.4401020">
+            <ele>2208.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7333290" lon="10.4397800">
+            <ele>2218.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7333720" lon="10.4394360">
+            <ele>2224.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7350030" lon="10.4367330">
+            <ele>2259.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7349820" lon="10.4367540">
+            <ele>2264.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7349390" lon="10.4368400">
+            <ele>2261.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7349390" lon="10.4366260">
+            <ele>2266.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7349820" lon="10.4366900">
+            <ele>2272.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7348960" lon="10.4366470">
+            <ele>2198.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7349820" lon="10.4366260">
+            <ele>2198.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7348100" lon="10.4369690">
+            <ele>2198.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7350250" lon="10.4367540">
+            <ele>2274.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7353680" lon="10.4359390">
+            <ele>2266.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7358400" lon="10.4361320">
+            <ele>2276.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7363980" lon="10.4357670">
+            <ele>2280.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7369340" lon="10.4350380">
+            <ele>2285.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7371700" lon="10.4336210">
+            <ele>2294.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7374280" lon="10.4328490">
+            <ele>2300.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7387580" lon="10.4303810">
+            <ele>2318.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7396380" lon="10.4293510">
+            <ele>2314.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7398310" lon="10.4287290">
+            <ele>2317.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7403250" lon="10.4281070">
+            <ele>2321.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7404100" lon="10.4276560">
+            <ele>2322.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7415260" lon="10.4263040">
+            <ele>2320.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7425560" lon="10.4256390">
+            <ele>2326.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7427920" lon="10.4245660">
+            <ele>2319.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7430930" lon="10.4239870">
+            <ele>2319.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7433930" lon="10.4236010">
+            <ele>2315.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7445950" lon="10.4234290">
+            <ele>2305.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7452380" lon="10.4230430">
+            <ele>2310.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7453460" lon="10.4216910">
+            <ele>2303.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7454530" lon="10.4213050">
+            <ele>2303.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7460540" lon="10.4203390">
+            <ele>2296.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7464610" lon="10.4199310">
+            <ele>2288.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7474060" lon="10.4194380">
+            <ele>2276.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7476630" lon="10.4194810">
+            <ele>2268.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7478780" lon="10.4189440">
+            <ele>2253.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7482000" lon="10.4186870">
+            <ele>2252.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7482640" lon="10.4183220">
+            <ele>2253.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7488650" lon="10.4178290">
+            <ele>2252.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7490150" lon="10.4179360">
+            <ele>2249.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7499160" lon="10.4168840">
+            <ele>2233.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7505600" lon="10.4169700">
+            <ele>2226.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7507740" lon="10.4167340">
+            <ele>2227.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7510320" lon="10.4167560">
+            <ele>2215.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7513540" lon="10.4163050">
+            <ele>2213.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7526200" lon="10.4161120">
+            <ele>2202.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7532210" lon="10.4162190">
+            <ele>2199.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7541860" lon="10.4155330">
+            <ele>2193.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7565470" lon="10.4149530">
+            <ele>2167.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7575980" lon="10.4151250">
+            <ele>2159.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7581770" lon="10.4147390">
+            <ele>2160.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7586710" lon="10.4149750">
+            <ele>2158.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7594220" lon="10.4157690">
+            <ele>2160.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7596790" lon="10.4158550">
+            <ele>2159.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7597440" lon="10.4155540">
+            <ele>2148.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7608170" lon="10.4157040">
+            <ele>2152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7613100" lon="10.4152320">
+            <ele>2152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7613530" lon="10.4149960">
+            <ele>2152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7613530" lon="10.4149960">
+            <ele>2152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7657520" lon="10.4158550">
+            <ele>2152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7662880" lon="10.4163910">
+            <ele>1997.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7667600" lon="10.4171420">
+            <ele>1997.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7662450" lon="10.4163270">
+            <ele>1982.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7664390" lon="10.4162190">
+            <ele>1974.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7679410" lon="10.4172490">
+            <ele>1937.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7687990" lon="10.4176140">
+            <ele>1936.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7690560" lon="10.4179360">
+            <ele>1934.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7698500" lon="10.4174640">
+            <ele>1906.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7703870" lon="10.4176350">
+            <ele>1881.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7719100" lon="10.4170990">
+            <ele>1882.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7732840" lon="10.4162840">
+            <ele>1868.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7737340" lon="10.4156610">
+            <ele>1864.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7736270" lon="10.4155970">
+            <ele>1857.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7736700" lon="10.4154470">
+            <ele>1851.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7736910" lon="10.4155970">
+            <ele>1848.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7739270" lon="10.4148030">
+            <ele>1840.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7745920" lon="10.4137950">
+            <ele>1833.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7751500" lon="10.4120780">
+            <ele>1824.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7761160" lon="10.4110050">
+            <ele>1817.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7767600" lon="10.4112630">
+            <ele>1818.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7773390" lon="10.4110050">
+            <ele>1816.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7779180" lon="10.4101680">
+            <ele>1814.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7786480" lon="10.4100390">
+            <ele>1810.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7793780" lon="10.4075290">
+            <ele>1780.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7799350" lon="10.4066060">
+            <ele>1769.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7800210" lon="10.4067140">
+            <ele>1768.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7802360" lon="10.4061990">
+            <ele>1768.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7802140" lon="10.4059840">
+            <ele>1768.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7796350" lon="10.4054900">
+            <ele>1768.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7791200" lon="10.4056410">
+            <ele>1767.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7787120" lon="10.4060480">
+            <ele>1762.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7788410" lon="10.4052970">
+            <ele>1763.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7792920" lon="10.4044820">
+            <ele>1755.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7799780" lon="10.4038600">
+            <ele>1748.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7803220" lon="10.4025290">
+            <ele>1736.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7813730" lon="10.4017350">
+            <ele>1727.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7818240" lon="10.4011560">
+            <ele>1705.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7827030" lon="10.3986030">
+            <ele>1695.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7832180" lon="10.3953200">
+            <ele>1675.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7834760" lon="10.3949330">
+            <ele>1668.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7833690" lon="10.3943110">
+            <ele>1655.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7840120" lon="10.3929160">
+            <ele>1644.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7859860" lon="10.3907280">
+            <ele>1626.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7872100" lon="10.3894830">
+            <ele>1616.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7886040" lon="10.3886890">
+            <ele>1601.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7893340" lon="10.3878090">
+            <ele>1596.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7906430" lon="10.3870800">
+            <ele>1579.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7916940" lon="10.3862210">
+            <ele>1569.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7916300" lon="10.3866080">
+            <ele>1483.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7918660" lon="10.3860500">
+            <ele>1481.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7925950" lon="10.3854060">
+            <ele>1480.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7947410" lon="10.3837750">
+            <ele>1474.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7961140" lon="10.3834110">
+            <ele>1472.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7979380" lon="10.3828100">
+            <ele>1449.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7990330" lon="10.3816720">
+            <ele>1433.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7999340" lon="10.3815220">
+            <ele>1422.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8005560" lon="10.3803850">
+            <ele>1419.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8007490" lon="10.3799770">
+            <ele>1419.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8022940" lon="10.3792050">
+            <ele>1419.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8023160" lon="10.3785830">
+            <ele>1419.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8019300" lon="10.3784110">
+            <ele>1434.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7990110" lon="10.3825740">
+            <ele>1383.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8009850" lon="10.3799130">
+            <ele>1383.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8011360" lon="10.3796120">
+            <ele>1383.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8002560" lon="10.3796340">
+            <ele>1383.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8001060" lon="10.3815010">
+            <ele>1383.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7983890" lon="10.3819940">
+            <ele>1385.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7985610" lon="10.3821450">
+            <ele>1387.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7987320" lon="10.3819080">
+            <ele>1406.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.7997840" lon="10.3816080">
+            <ele>1403.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8000410" lon="10.3814790">
+            <ele>1401.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8008570" lon="10.3795910">
+            <ele>1401.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8017150" lon="10.3787330">
+            <ele>1401.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8027450" lon="10.3786680">
+            <ele>1393.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8033890" lon="10.3780250">
+            <ele>1393.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8055340" lon="10.3749990">
+            <ele>1393.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8057060" lon="10.3743120">
+            <ele>1393.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8059850" lon="10.3743980">
+            <ele>1386.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8072300" lon="10.3722100">
+            <ele>1382.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8083670" lon="10.3713730">
+            <ele>1377.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8084530" lon="10.3708150">
+            <ele>1377.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8093320" lon="10.3699350">
+            <ele>1377.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8095470" lon="10.3708150">
+            <ele>1259.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8113070" lon="10.3683040">
+            <ele>1232.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8129800" lon="10.3683470">
+            <ele>1178.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8131490" lon="10.3683260">
+            <ele>1178.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8156650" lon="10.3663570">
+            <ele>1168.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8165630" lon="10.3633380">
+            <ele>1166.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8171020" lon="10.3630750">
+            <ele>1157.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8178210" lon="10.3637320">
+            <ele>1153.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8182700" lon="10.3649130">
+            <ele>1149.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8199770" lon="10.3688510">
+            <ele>1147.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8224920" lon="10.3726580">
+            <ele>1139.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8241990" lon="10.3760710">
+            <ele>1132.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8268040" lon="10.3789590">
+            <ele>1126.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8269830" lon="10.3798780">
+            <ele>1119.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8249170" lon="10.3832910">
+            <ele>1112.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8250180" lon="10.3838610">
+            <ele>1108.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8250390" lon="10.3839900">
+            <ele>1107.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8258550" lon="10.3861360">
+            <ele>1108.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8268420" lon="10.3886890">
+            <ele>1103.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8277650" lon="10.3900840">
+            <ele>1099.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8288160" lon="10.3926590">
+            <ele>1100.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8296310" lon="10.3936670">
+            <ele>1099.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8304680" lon="10.3952340">
+            <ele>1098.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8306180" lon="10.3965430">
+            <ele>1097.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8304040" lon="10.3977010">
+            <ele>1096.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8303820" lon="10.3999760">
+            <ele>1093.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8305970" lon="10.4008770">
+            <ele>1092.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8313910" lon="10.4016710">
+            <ele>1092.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8323780" lon="10.4031730">
+            <ele>1090.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8333860" lon="10.4060270">
+            <ele>1090.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8342880" lon="10.4075500">
+            <ele>1095.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8344590" lon="10.4084090">
+            <ele>1097.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8347380" lon="10.4086660">
+            <ele>1096.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8349310" lon="10.4084950">
+            <ele>1094.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8351250" lon="10.4086880">
+            <ele>1091.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8352320" lon="10.4102760">
+            <ele>1090.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8348670" lon="10.4122930">
+            <ele>1089.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8350390" lon="10.4139450">
+            <ele>1087.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8352960" lon="10.4143310">
+            <ele>1087.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8355110" lon="10.4152970">
+            <ele>1086.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8368200" lon="10.4165840">
+            <ele>1085.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8391800" lon="10.4164550">
+            <ele>1085.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8396520" lon="10.4166270">
+            <ele>1085.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8405530" lon="10.4176140">
+            <ele>1088.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8413900" lon="10.4191800">
+            <ele>1096.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8418840" lon="10.4196740">
+            <ele>1097.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8419700" lon="10.4208970">
+            <ele>1107.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8421840" lon="10.4218200">
+            <ele>1111.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8425700" lon="10.4221850">
+            <ele>1114.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8432140" lon="10.4223780">
+            <ele>1122.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8436860" lon="10.4227640">
+            <ele>1124.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8442440" lon="10.4236440">
+            <ele>1133.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8449090" lon="10.4242020">
+            <ele>1141.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8454890" lon="10.4249950">
+            <ele>1154.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8455740" lon="10.4256180">
+            <ele>1157.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8463470" lon="10.4263470">
+            <ele>1163.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8483640" lon="10.4270980">
+            <ele>1163.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8493940" lon="10.4268410">
+            <ele>1158.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8502090" lon="10.4251670">
+            <ele>1135.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8510030" lon="10.4242660">
+            <ele>1123.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8525050" lon="10.4245660">
+            <ele>1123.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8534060" lon="10.4250380">
+            <ele>1123.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8529340" lon="10.4246950">
+            <ele>1123.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8531490" lon="10.4246090">
+            <ele>1122.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8537710" lon="10.4250810">
+            <ele>1120.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8543080" lon="10.4246310">
+            <ele>1120.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8563460" lon="10.4251670">
+            <ele>1117.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8575050" lon="10.4259400">
+            <ele>1097.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8582560" lon="10.4255530">
+            <ele>1086.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8584280" lon="10.4248880">
+            <ele>1080.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8578270" lon="10.4243950">
+            <ele>1080.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8579130" lon="10.4237510">
+            <ele>1079.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8582770" lon="10.4239230">
+            <ele>1073.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8583850" lon="10.4237720">
+            <ele>1072.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8582560" lon="10.4236870">
+            <ele>1070.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8582990" lon="10.4235150">
+            <ele>1070.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8589640" lon="10.4239660">
+            <ele>1074.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8595860" lon="10.4251240">
+            <ele>1079.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8605300" lon="10.4261540">
+            <ele>1078.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8619250" lon="10.4300810">
+            <ele>1079.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8622040" lon="10.4317330">
+            <ele>1078.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8621400" lon="10.4333000">
+            <ele>1075.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8623540" lon="10.4346940">
+            <ele>1074.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8630200" lon="10.4363470">
+            <ele>1077.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8634490" lon="10.4368620">
+            <ele>1075.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8647790" lon="10.4401660">
+            <ele>1058.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8676540" lon="10.4440930">
+            <ele>1048.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8692420" lon="10.4445650">
+            <ele>1049.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8701430" lon="10.4450580">
+            <ele>1050.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8706370" lon="10.4458310">
+            <ele>1050.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8705300" lon="10.4464100">
+            <ele>1049.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8707660" lon="10.4479120">
+            <ele>1048.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8707010" lon="10.4495430">
+            <ele>1046.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8721180" lon="10.4544570">
+            <ele>1046.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8718600" lon="10.4550790">
+            <ele>1049.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8715600" lon="10.4552720">
+            <ele>1051.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8712590" lon="10.4551440">
+            <ele>1052.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8709800" lon="10.4546710">
+            <ele>1054.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8699720" lon="10.4544140">
+            <ele>1055.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8696500" lon="10.4537270">
+            <ele>1055.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8694350" lon="10.4526110">
+            <ele>1055.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8694570" lon="10.4518390">
+            <ele>1068.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8692210" lon="10.4513240">
+            <ele>1077.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8678470" lon="10.4503160">
+            <ele>1100.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8667320" lon="10.4486630">
+            <ele>1116.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8662600" lon="10.4476550">
+            <ele>1126.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8661310" lon="10.4465820">
+            <ele>1133.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8656800" lon="10.4449730">
+            <ele>1152.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8633410" lon="10.4428480">
+            <ele>1154.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8635560" lon="10.4422690">
+            <ele>1195.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8632980" lon="10.4422900">
+            <ele>1199.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8632340" lon="10.4423980">
+            <ele>1199.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8634920" lon="10.4425260">
+            <ele>1205.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8638130" lon="10.4432560">
+            <ele>1216.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8643710" lon="10.4438140">
+            <ele>1227.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8649940" lon="10.4448870">
+            <ele>1232.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8649940" lon="10.4451440">
+            <ele>1235.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8644570" lon="10.4444580">
+            <ele>1246.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8637920" lon="10.4442430">
+            <ele>1248.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8631700" lon="10.4437710">
+            <ele>1262.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8626330" lon="10.4438140">
+            <ele>1260.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8622690" lon="10.4435560">
+            <ele>1265.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8616460" lon="10.4436210">
+            <ele>1274.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8603370" lon="10.4426770">
+            <ele>1290.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8599510" lon="10.4413030">
+            <ele>1294.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8597790" lon="10.4415390">
+            <ele>1294.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8597580" lon="10.4423550">
+            <ele>1297.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8600580" lon="10.4433850">
+            <ele>1300.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8605950" lon="10.4444360">
+            <ele>1303.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8613890" lon="10.4451870">
+            <ele>1343.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8614960" lon="10.4454020">
+            <ele>1349.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8614530" lon="10.4463240">
+            <ele>1357.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8619680" lon="10.4469680">
+            <ele>1369.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8626760" lon="10.4493930">
+            <ele>1374.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8629980" lon="10.4495860">
+            <ele>1387.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8632340" lon="10.4501650">
+            <ele>1395.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8633200" lon="10.4516240">
+            <ele>1405.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8637060" lon="10.4523970">
+            <ele>1423.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8634490" lon="10.4526760">
+            <ele>1418.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8648650" lon="10.4522040">
+            <ele>1569.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8645000" lon="10.4526330">
+            <ele>1527.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8651220" lon="10.4545860">
+            <ele>1493.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8652300" lon="10.4561090">
+            <ele>1481.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8655300" lon="10.4564310">
+            <ele>1481.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8657020" lon="10.4585980">
+            <ele>1472.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8661520" lon="10.4604220">
+            <ele>1470.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8665170" lon="10.4605510">
+            <ele>1470.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8672470" lon="10.4601860">
+            <ele>1474.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8678900" lon="10.4602500">
+            <ele>1475.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8688770" lon="10.4619030">
+            <ele>1473.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8695000" lon="10.4620740">
+            <ele>1475.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8697360" lon="10.4627610">
+            <ele>1474.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8697140" lon="10.4648850">
+            <ele>1483.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8699720" lon="10.4653570">
+            <ele>1488.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8699290" lon="10.4661080">
+            <ele>1491.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8702720" lon="10.4666880">
+            <ele>1496.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8710230" lon="10.4660440">
+            <ele>1505.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8717740" lon="10.4657440">
+            <ele>1515.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8724390" lon="10.4663660">
+            <ele>1522.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8735120" lon="10.4668380">
+            <ele>1532.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8739840" lon="10.4678460">
+            <ele>1530.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8759160" lon="10.4689840">
+            <ele>1540.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8761730" lon="10.4692200">
+            <ele>1542.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8763450" lon="10.4698210">
+            <ele>1542.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8769240" lon="10.4706140">
+            <ele>1541.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8769670" lon="10.4710220">
+            <ele>1544.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8766670" lon="10.4725460">
+            <ele>1538.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8771170" lon="10.4733830">
+            <ele>1533.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8780400" lon="10.4733400">
+            <ele>1531.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8789840" lon="10.4741120">
+            <ele>1525.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8794990" lon="10.4756140">
+            <ele>1519.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8799710" lon="10.4759150">
+            <ele>1519.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8810440" lon="10.4772880">
+            <ele>1515.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8813660" lon="10.4784680">
+            <ele>1510.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8820950" lon="10.4791760">
+            <ele>1507.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8823960" lon="10.4797340">
+            <ele>1502.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8830820" lon="10.4799060">
+            <ele>1498.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8850140" lon="10.4818150">
+            <ele>1486.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8852930" lon="10.4823950">
+            <ele>1484.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8870950" lon="10.4839830">
+            <ele>1476.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8872020" lon="10.4844120">
+            <ele>1470.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8877390" lon="10.4849270">
+            <ele>1466.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8887040" lon="10.4852490">
+            <ele>1461.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8893050" lon="10.4858710">
+            <ele>1458.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8904210" lon="10.4880170">
+            <ele>1451.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8905710" lon="10.4907420">
+            <ele>1444.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8907640" lon="10.4915570">
+            <ele>1435.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8902060" lon="10.4931240">
+            <ele>1415.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8892620" lon="10.4947110">
+            <ele>1391.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8887690" lon="10.4959350">
+            <ele>1368.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8885970" lon="10.4969430">
+            <ele>1355.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8877600" lon="10.4988310">
+            <ele>1345.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8876100" lon="10.4993250">
+            <ele>1344.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8884250" lon="10.5018140">
+            <ele>1344.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8887900" lon="10.5022220">
+            <ele>1347.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8905930" lon="10.5014060">
+            <ele>1353.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8908500" lon="10.5012350">
+            <ele>1354.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8907210" lon="10.5008910">
+            <ele>1353.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8906140" lon="10.5010200">
+            <ele>1356.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8905070" lon="10.5005260">
+            <ele>1356.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8913010" lon="10.5018140">
+            <ele>1309.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8905930" lon="10.5008700">
+            <ele>1357.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+         <trkpt lat="46.8909140" lon="10.5014280">
+            <ele>1358.000000</ele>
+            <time>2006-01-01T00:00:00Z</time>
+            <speed>0</speed>
+            <pdop>0</pdop>
+         </trkpt>
+      </trkseg>
+   </trk>
+</gpx>

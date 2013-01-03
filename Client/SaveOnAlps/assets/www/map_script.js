@@ -9,11 +9,12 @@ var json;
 var url;
 var textBox = document.getElementById("objekt");
 var karte = document.getElementById("map");
+
 var markers = new Array();
 var markercounter = 0;
-
-var startpunkt;
-var endpunkt;
+var oldmarkercounter = 0;
+var startpunktgeloescht=false;
+var endpunktgeloescht=false;
 
 
 
@@ -86,39 +87,50 @@ map.panTo([latitude, longitude]);
 function mapTap(event){
 	var marker;
 	var icon;
+	var punkteBox= document.getElementById("punkte");
     /*var marker = L.marker(event.latlng, {
 		draggable: true
           
 	}).addTo(map);*/
-	if(markercounter == 0){
+	if(startpunktgeloescht){
 	icon = L.icon({
-    iconUrl: 'images/start.png',
+	iconUrl: 'Images/start.png',
 	iconSize: [30, 37],
 	iconAnchor: [15, 37]
+	
 	});
-	startpunkt = L.marker(event.latlng, {
+	marker = L.marker(event.latlng, {
 		draggable: true,
 		icon: icon
 	});
-	map.addLayer(startpunkt);
-	markers[markercounter] = startpunkt;
+	var bild = document.createElement("img");
+	if(markercounter <= 1){
+	var text = document.createTextNode(' Setzen Sie den Endpunkt');
+	bild.setAttribute("src","Images/end.png");
 	}
-	if(markercounter == 1){
-	icon = L.icon({
-    iconUrl: 'images/end.png',
-	iconSize: [30, 37],
-	iconAnchor: [15, 37]
-	});
-	endpunkt = L.marker(event.latlng, {
-		draggable: true,
-		icon: icon
-	});
-	map.addLayer(endpunkt);
-	markers[markercounter] = endpunkt;
+	else{ 
+	var text = document.createTextNode(' Setzen Sie beliebig viele Zwischenpunkte');
+	bild.setAttribute("src","Images/over.png");
 	}
-	if(markercounter > 1){
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+	startpunktgeloescht = false;
+	map.addLayer(marker);
+	markers[0] = marker;
+	for(var i=0; i<markers.length;i++){
+		if(markers[i]!= null){
+		markers[i].bindPopup("<div ontouchstart = 'markerLöschen("+i+");'>Löschen X</div>");
+		}
+	}
+	//marker.bindPopup("<div onclick = 'markerLöschen(0);'>Löschen X</div>");
+	}
+	
+	else if(endpunktgeloescht){
 	icon = L.icon({
-    iconUrl: 'images/over.png',
+    iconUrl: 'Images/end.png',
 	iconSize: [30, 37],
 	iconAnchor: [15, 37]
 	});
@@ -126,15 +138,90 @@ function mapTap(event){
 		draggable: true,
 		icon: icon
 	});
+	var text = document.createTextNode(' Setzen Sie beliebig viele Zwischenpunkte');
+	var bild = document.createElement("img");
+	bild.setAttribute("src","Images/over.png")
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+	endpunktgeloescht = false;
 	map.addLayer(marker);
+	markers[1] = marker;
+	//marker.bindPopup("<div onclick = 'markerLöschen(1);'>Löschen X</div>");
+	for(var i=0; i<markers.length;i++){
+		if(markers[i]!= null){
+		markers[i].bindPopup("<div ontouchstart = 'markerLöschen("+i+");'>Löschen X</div>");
+		}
+	}
+	}
+	else{
+	if(markercounter == 0){
+	icon = L.icon({
+	iconUrl: 'Images/start.png',
+	iconSize: [30, 37],
+	iconAnchor: [15, 37]
 	
-	markers[markercounter] = marker;
+	});
+	marker = L.marker(event.latlng, {
+		draggable: true,
+		icon: icon
+	});
+	var text = document.createTextNode(' Setzen Sie den Endpunkt');
+	var bild = document.createElement("img");
+	bild.setAttribute("src","Images/end.png")
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+	/*else{
+		markers[markercounter].setLatLng(event.latlng);
+	}*/
+	}
+	if(markercounter == 1){
+
+	icon = L.icon({
+    iconUrl: 'Images/end.png',
+	iconSize: [30, 37],
+	iconAnchor: [15, 37]
+	});
+	marker = L.marker(event.latlng, {
+		draggable: true,
+		icon: icon
+	});
+	var text = document.createTextNode(' Setzen Sie beliebig viele Zwischenpunkte');
+	var bild = document.createElement("img");
+	bild.setAttribute("src","Images/over.png")
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+
+	}
+	if(markercounter > 1){
+	
+	icon = L.divIcon({
+	iconSize: [30, 37],
+	iconAnchor: [15, 37],
+	className: 'mapicon',
+	html: "<img src='Images/over.png' /> <div>"+(markercounter-1)+"</div>"
+	});
+	marker = L.marker(event.latlng, {
+		draggable: true,
+		icon: icon
+	});
+	
 	}
 	
-	
+	map.addLayer(marker);
+	markers[markercounter] = marker;
+	//marker.bindPopup(marker._latlng.lat + " " + marker._latlng.lng);
+	marker.bindPopup("<div ontouchstart = 'markerLöschen("+markercounter+");'>Löschen X</div>");
 	markercounter++;
-	
-	console.log(marker._latlng.lat + " " + marker._latlng.lng);
+	}
 }
 
 function ergebnisse(){
@@ -174,7 +261,7 @@ function render(jsonstring){
 	var textP = document.createElement("p");
 	var unterstrich = document.createElement("u");
 	textP.appendChild(text);
-	textP.setAttribute("onclick", "trefferAnzeigen("+json[i].lat+","+json[i].lon+")");
+	textP.setAttribute("ontouchstart", "trefferAnzeigen("+json[i].lat+","+json[i].lon+")");
 	unterstrich.appendChild(textP);
 	section_suchergebnisse.appendChild(unterstrich);
 	section_suchergebnisse.appendChild(document.createElement("br"));
@@ -197,4 +284,44 @@ map.panTo([lat,lng]);
 
 section_karte.style.display = "block";
 section_suchergebnisse.style.display = "none";
+}
+
+function markerLöschen(markercounter){
+	
+	map.removeLayer(markers[markercounter]);
+	markers[markercounter] = null;
+	if(markercounter == 0){
+	var punkteBox= document.getElementById("punkte");
+	startpunktgeloescht=true;
+	var text = document.createTextNode(' Setzen Sie den Startpunkt');
+	var bild = document.createElement("img");
+	bild.setAttribute("src","Images/start.png")
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+	for(var i=0; i<markers.length;i++){
+		if(markers[i]!= null){
+		markers[i].unbindPopup();
+		}
+	}
+	}
+	if(markercounter == 1){
+	var punkteBox= document.getElementById("punkte");
+	endpunktgeloescht=true;
+	var text = document.createTextNode(' Setzen Sie den Endpunkt');
+	var bild = document.createElement("img");
+	bild.setAttribute("src","Images/end.png")
+	while(punkteBox.firstChild){
+		punkteBox.removeChild(punkteBox.firstChild);
+	}	
+	punkteBox.appendChild(bild);
+	punkteBox.appendChild(text);
+	for(var i=0; i<markers.length;i++){
+		if(markers[i]!= null){
+		markers[i].unbindPopup();
+		}
+	}
+	}
 }

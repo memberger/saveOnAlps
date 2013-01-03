@@ -5,11 +5,8 @@ require_once('database.php');
 class Main 
 {	//Attributes
 	
-	private static $currentGame; //instance of Game - current Game
+
 	private static $loggedInUser; //instance of User - the currently logged in user
-	private static $logger=array(); //array consisting out of Log instances
-	private static $selectedPlayground; //instance of Playground - currently selected Playground
-	
 	
 	//AUTOR: BIBI
 	//proves if the LogIn data is valid and if so
@@ -101,6 +98,7 @@ class Main
 						$obj['success']=true;
 						$data=$obj;
 					}
+					//$data=$obj;
 					break;
 			case 'requestGpx':
 					{
@@ -128,7 +126,9 @@ class Main
 						  $data['success']=true;
 					 	}
 					break;
-					
+			default: 
+					$data=array('success'=>false, 'data'=>$obj);
+					break;
 			
 			
 		}
@@ -170,7 +170,7 @@ class Main
 					$locCoords=$coords[$i];
 					$query = "Insert into location (latitude,longitude) values (?,?)";
 					$statement = $con->prepare($query);
-					$statement->execute(array($locCoords['lat'],$locCoords['long']));
+					$statement->execute(array($locCoords['lat'],$locCoords['lon']));
 					$locid = $con->lastInsertId();
 					
 					$query = "Insert into predefinedPoint (location_idlocation,predefinedRoute_idpredefinedRoute, pointNr) values (?,?,?)";

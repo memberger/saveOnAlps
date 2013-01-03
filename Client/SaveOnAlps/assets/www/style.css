@@ -64,7 +64,7 @@ margin-top: -2%;
 
 section#logo{
 height: 51px;
-padding-top: 0.9em;
+padding-top: 0.8em;
 background-image: url('images/mountain.png');
 background-position:bottom left;
 background-repeat: no-repeat;
@@ -424,4 +424,69 @@ width: 40px;
 font-size: 1.2em;
 padding-top:1%;
 }
+
+
+
+.route-eintragen-tab{
+
+	
+
+
+}
+
+#tab-detail{
+
+display: inline;	
+float: left;
+margin-left: 25%;	
+
+	
+}
+
+#tab-karte{
+
+display: inline;	
+float:right;
+margin-right: 25%;
+
+
+}
+
+section#route-eintragen-detail{
+
+display: block;
+
+
+}
+
+section#route-eintragen-karte{
+
+display: block;
+
+}
+
+section#karte{
+
+	display: block;
+	position: relative;
+	
+	width: 100%;
+	height: 300px;
+
+
+}
+#map-canvas{
+
+float: right;
+top:0;
+left: 0;
+
+
+}
+
+
+
+
+
+
 
