@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "com.phonegap.getting.started"
+version = "1.0.0">
+
+<name>SaveOnAlps</name>
+
+<description>
+SaveOnAlps
+</description>
+
+<author href="fhstp.ac.at"
+email="mt102002@fhstp.ac.at">
+Thomas Ederer, Michael Emberger, Lisa Gringl 
+</author>
+
+<icon src="soa_launcher.png" gap:role="default" />
+
+
+<preference name="orientation" value="portrait" />
+<preference name="exit-on-suspend" value="false" />
+<preference name="fullscreen" value="true" />
+</widget>
