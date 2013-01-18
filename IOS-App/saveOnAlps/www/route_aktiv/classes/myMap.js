@@ -15,9 +15,11 @@ var map = L.map('map',{zoomControl:true}).setView([51, -0], 13);
 this.map = map;
 this.minutes = 0;
 this.coords = [];
+this.notfallCoord;
 this.mapViewActive = false;
 this.circle;
-this.updateTime = 0.5;
+this.updateTime = 2;
+this.savedCoords = 0;
 
 this.hideMap();
 
@@ -48,12 +50,15 @@ Map.prototype.hideMap = function(){
 
 Map.prototype.getCurrentPos = function(){
 
-navigator.geolocation.getCurrentPosition(currentPosSuccess, currentPosError, {enableHighAccuracy : true, maximumAge: 60000, timeout:6000});
 var that = this;
-function currentPosSuccess(pos){
+navigator.geolocation.getCurrentPosition(currentPosSuccess, currentPosError, {enableHighAccuracy : true, maximumAge: 30000, timeout:6000});
 
+
+
+function currentPosSuccess(pos){
+	
 	console.log(pos);
-	that.minutes = 0;
+	
 	var obj = {
 		"lat" : pos.coords.latitude,
 		"lon" : pos.coords.longitude,
@@ -61,9 +66,11 @@ function currentPosSuccess(pos){
 	};
 
 	that.coords.push(obj);
+	that.notfallCoord = { "lat" : obj.lat , "lon" : obj.lon };
 	
-	if(navigator.connection != "0" || navigator.onLine == true){	
+	if(myPGap.checkConnection()!=0){	
 		console.log("coords speichern");
+		that.saveCoords();
 	}
 
 	//coords in ls speichern
@@ -138,6 +145,32 @@ Map.prototype.updateAnzeige = function(){
 		d.getElementById("info_long").textContent = Math.round(coord.lon*1000000)/1000000;
 		d.getElementById("info_accu").textContent = Math.round(coord.accuracy)+"m";
 	}
-		d.getElementById("info_time").textContent = this.minutes+" min /"+this.coords.length;
+		d.getElementById("info_time").textContent = this.minutes+" min /"+this.savedCoords;
+
+}
+
+Map.prototype.saveCoords = function(){
+
+
+
+	if(this.coords.length != 0){
+		
+		json = { "type":"insertLoc",
+				 "object": {	
+					 	"routeID":myRoute.object.routeID,
+					 	"userID":myRoute.object.userID,
+					 	"coords":myMap.coords,
+					 	"battery":myPGap.battery,
+					 	"signalStrength":myPGap.checkConnection()
+				 }
+		}
+
+		
+		ajax.connectCommunicator(json.type,json);		
+
+
+	}else{
+
+	}
 
 }

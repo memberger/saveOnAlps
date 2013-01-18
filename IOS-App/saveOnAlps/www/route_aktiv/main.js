@@ -1,8 +1,56 @@
-window.addEventListener("batterystatus", onBatteryStatus, false);
+var ajax = {
+communicatorURL : "http://flock-0312.students.fhstp.ac.at/server/communicator.php?callback=meins",
+currentName : null,
+connectCommunicator : function(pname,json){
 
-function onBatteryStatus(info) {
-    // Handle the online event
-    alert("Level: " + info.level + " isPlugged: " + info.isPlugged); 
+	this.currentName = pname;
+	
+	var xmlhttp=new XMLHttpRequest();
+	var that = this;
+	
+	xmlhttp.onreadystatechange = function() {
+		if(xmlhttp.readyState==4){
+			console.log(that.currentName);
+			json=JSON.parse(xmlhttp.responseText);
+			that.render(that.currentName,json);
+	
+			//renderGetRouteAtResponse(json)  //daten an die funktion render übergeben (render muss man selbst programmieren)
+		}
+	 };
+	var jsonString = JSON.stringify(json);	
+	xmlhttp.open("POST", this.communicatorURL, true);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xmlhttp.send("json="+jsonString);
+
+
+
+},
+render : function(name,json){
+
+
+	if(name == "RouteNotfall"){
+		
+		console.log(json);
+
+	}
+
+	if(name == "insertLoc"){
+
+		console.log(json);
+		if(json.succes){
+			console.log("coords eingetragen");
+			myMap.minutes = 0;
+			myMap.savedCoords += myMap.coords.length;
+			mayMap.coords = [];
+		}else{
+			alert("coords konnten nicht eingetragen werden")
+		}
+
+	}
+
+
+	} 
+
 }
 
 
@@ -13,27 +61,55 @@ var myEvents ={
 	var d = document;
 	d.getElementById("position").addEventListener(this.event,function(){ myMap.showMap() },false);
 	d.getElementById("route-header-btn-back").addEventListener(this.event,function(){ myMap.hideMap() },false);
-	d.getElementById("add").addEventListener(this.event,function(){ myMap.getCurrentPos() },false);
-	d.getElementById("notruf").addEventListener(this.event,function(){ myPGap.notrufAbsetzen() },false);
+	d.getElementById("add").addEventListener(this.event,function(){ stopInterval();
+																	myMap.getCurrentPos();
+																	startInterval();},false);
+	d.getElementById("notruf").addEventListener(this.event,function(){ notrufAbgeben() },false);
 		
 }
 
 }
 
+var ls = {
+	"ls" : localStorage,
+	"loadMyRoute" : function(){
+			
+			return JSON.parse(this.ls["myRoute"]);
+
+	}
+
+}
 
 
 
+
+var myRoute = ls.loadMyRoute();
 var myMap = new Map();
 var myPGap = new myPhoneGap();
 
 myMap.getCurrentPos();
-var intervalID = window.setInterval(function(){
+
+
+var intervalID;
+
+function startInterval(){
+
+	intervalID = window.setInterval(function(){
 
 	myMap.interval();
 	updateIndikator();
 
 
 }, 30000);// jede halbe Minute
+}
+
+function stopInterval(){
+
+	intervalID = window.clearInterval(intervalID);
+
+}
+
+startInterval();
 
 myEvents.init();
 
@@ -100,6 +176,36 @@ function updateIndikator(){
     
     //alert("Akku: "+battery+", Connection: "+connection+", Accuracy: "+accu+", LastEntry(minutes): "+minutes+"");
     
+}
+
+
+function notrufAbgeben(){
+
+	
+		
+var json =	{	"type":"RouteNotfall",
+				"object":{
+					"routeID":myRoute.object.routeID,
+					"userID":myRoute.object.userID,
+					"coords":myMap.notfallCoord,
+					"battery":myPGap.battery,
+					"signalStrength":myPGap.checkConnection()
+				}
+			}
+
+console.log(json);
+	
+ajax.connectCommunicator(json.type,json);
+	myPGap.notrufAbsetzen();
+
+}
+
+
+window.addEventListener("batterystatus", onBatteryStatus, false);
+
+function onBatteryStatus(info) {
+    // Handle the online event
+    alert("Level: " + info.level + " isPlugged: " + info.isPlugged); 
 }
 
 

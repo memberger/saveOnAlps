@@ -34,6 +34,7 @@ if (localStorage.myRoute == undefined){
 		        "routecode": "",
 		        "zielgebiet":"",
 				"userID":1,
+				"routeID" : 1,//ändern Wenn DB funktioniert
 				"gpxID": "",
 				"richtigeRichtung":true,
 				"coords":[]
@@ -251,7 +252,7 @@ var prevSlide = function(){
 	
 	
 	if(currentPage == 1){
-		window.location = "../index.html"
+		window.location = "../home.html";
 	}
 
 	if(currentPage > 1 && scroll == false){

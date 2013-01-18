@@ -28,6 +28,7 @@
 	<string>cloud</string>
 	<key>ExternalHosts</key>
 	<array>
+		<string>http://nominatim.openstreetmap.org/</string>
 		<string>http://a.tile.openstreetmap.org/</string>
 		<string>http://flock-0312.students.fhstp.ac.at/</string>
 	</array>

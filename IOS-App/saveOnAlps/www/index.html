@@ -1,73 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<title>My first web apP</title>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" />
-<meta name = "apple-mobile-web-app-capable" content="yes" />
+<title>My first web app</title>
+<meta charset="UTF-8" />
 
-<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" >
+<meta name = "apple-mobile-web-app-capable" content="yes" >
+
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
 <script type="text/javascript" src="script.js"> </script>
-
 <link rel="stylesheet" href="style.css" type="text/css"/>
 
-<!-- jquery-->
 <link text="text/javascript" href="jquery-ui.min.js"/>
+
+<script type="text/javascript">
+function login(){
+var loginForm = document.getElementById("login");
+
+var send_obj =
+    {    "type":"login",
+        "object":
+        {    "email": loginForm.email.value,
+            "password": loginForm.pword.value
+        }
+    };
+window.localStorage.setItem("send_obj",send_obj);
+loginRequest(send_obj);
+
+window.location = "home.html";
+}
+
+function register(){
+var registerForm = document.getElementById("register");
+
+if(registerForm.pword1.value==registerForm.pword2.value){
+var send_obj =
+    {    "type":"register",
+        "object":
+        {    "email": registerForm.email.value,
+            "password": registerForm.pword1.value
+        }
+    };
+window.localStorage.setItem("send_obj",send_obj);
+registerRequest(send_obj);
+window.location = "home.html";
+}
+else{
+alert("Passwörter nicht gleich!!!")
+}
+
+}
+
+</script>
 
 </head>
 
-
 <body>
-	<div class="container">
-	
+
+
+
 	<header>
 		<section id="logo">
 			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
 		</section>
 	</header>
-				<!--Route eintragen Button -->
-				
-				
-				
-		<section class="content">
-				<!--Gruppe bilden und Notfallkontakt Buttons -->
-				<section id="further">
-				<button id="gruppe" class="interaction" onclick="window.location='route/route.html'">
-				Route eintragen
-				</button>
-				<hr> </hr>
-				<button id="notfall" class="interaction">
-				Route beitreten
-				</button>
-				</section>	
-				
-				<button id="route_eintragen" class="interaction">
-				Notfallkontakt<br/>
-				<span class="smaller">Max Mustermann, +432567..</span>
-				</button></a>		
+
+
+
+
+	<section>
+		<h1>Login</h1>
+		<form id="login">
+			<p>ENTER USER NAME <input type="text" name="email"/> ENTER PASSWORD <input type="password" name="pword"/>
+			<input type="button" value="LOGIN" name="Submit" onclick="login()"/>
+			</p>
+		</form>
+	</section>
+
+
+
+	<section>
+		<h1>Registrieren</h1>
+		<form id="register">
+			<p>ENTER USER NAME <input type="text" name="email"/> ENTER PASSWORD <input type="password" name="pword1"/> REPEAT PASSWORD <input type="password" name="pword2"/>
+			<input type="button" value="REGISTRIEREN" name="Submit" onclick="register()"/>
+			</p>
+		</form>
+
+	</section>
+
+
+						
 				
 		
-		</section>
+
 		
 		
-		<footer class="button_bottom">
-		<button id="route_starten" onclick="window.location = 'route_aktiv/main.html'">
-		<p class="route">Route starten</p>
+		<!--<footer>
+		
+        <button id="speichern" onClick="insertRouteRequest()">
+		<button id="speichern" ontouchend="window.location='index.html'">
+		<p>Speichern</p>
 		</button>
+        </a>
 		</footer>
+		<!--<script type="text/javascript"> checkLocalStorage_Route();</script>-->
 		
-		</div>
-				
-
-
-<script type="text/javascript"> 
-if(window.localStorage.getItem("route_id")!=null)
-{
-	console.log("***************Geht scho, route kann gestartet werden!*********");
-	document.getElementById("route_starten").disabled=false;
-}
-
-</script>
+	
 		
 </body>
 </html>

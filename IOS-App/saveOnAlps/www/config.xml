@@ -19,6 +19,4 @@ Thomas Ederer, Michael Emberger, Lisa Gringl
 
 
 <preference name="orientation" value="portrait" />
-<preference name="exit-on-suspend" value="false" />
-<preference name="fullscreen" value="true" />
 </widget>
