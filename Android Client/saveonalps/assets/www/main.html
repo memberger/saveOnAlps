@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>My first web app</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" />
+
+<!-- Thomas -->
+<link text="text/javascript" href="jquery-ui.min.js"/>
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+
+</head>
+
+<body >
+
+<div class="container">
+	<header>
+		<section id="logo">
+			<img src="images/route_aendern.png" alt="route ändern" class="right aendern" onclick="openChangeRoute()"/>
+			<p class="normal"><span class="blue">Route</span></p>
+			
+		</section>
+	</header>
+				
+		<section class="content">
+			
+				
+				<!--Section  Sicherheitsstatus-->
+				<section id="status">
+				<p class="bold">Sicherheitsstatus</p>
+				<section id="box_indikator">
+				<img src="images/indikator.png" alt="sicherheitsindikator" class="indikator"/>
+				<img id="indikatorpfeil" src="images/pfeil.png" alt="pfeil" class="pfeil" />
+				</section>
+				
+				<section id="infos">
+				<table >
+				<tr><td class="head">Latitude:</td><td class="right" id="info_lat">00.000</td></tr>
+				<tr><td class="head">Longitude:</td><td class="right" id="info_long">00.000 </td></tr>
+				<tr><td class="head">Genauigkeit:</td><td class="right" id="info_accu">0 m</td></tr>
+				<tr><td class="head">Letzter Eintrag:</td><td class="right" id="info_time">---</td></tr>
+				</table>
+				</section>
+								
+				
+				<section id="add_section">
+				
+				<button id="add" onClick="insertPositionManually()">
+				
+				<img src="images/add.png" alt="add" class="addpic"/>
+				<p>Eintragen</p>
+				</button>
+				
+				</section>
+				<div class="clear"> </div>
+				
+				<section>
+					<button id="position" onClick="showPosition()">
+					<p class="position">Position anzeigen</p></button>
+				</section>
+
+					
+				</section>
+				
+			
+				<button id="notruf" onclick="sendNotfall()">
+				<img src="images/plus.png" alt="notruf" class="plus">
+				Notruf absetzten
+				</button>			
+				
+		
+				
+                
+		
+			</section>
+		<footer>
+		<button id="route_stoppen" onclick="stopRoute()">
+		<p class="route_stop">Route stoppen</p>
+		</button>
+		</footer>
+		
+	</div>
+<script type="text/javascript" src="script.js"> </script>
+		
+</body>
+</html>

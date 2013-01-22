@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Route</title>
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" >
+<meta name = "apple-mobile-web-app-capable" content="yes" >
+
+<link rel="stylesheet" href="../assets/leaflet/dist/leaflet.css" type="text/css"/>
+
+<script type="text/javascript" src="../assets/leaflet/dist/leaflet.js"></script>
+
+<script type="text/javascript" src="map_script.js"> </script>
+<link rel="stylesheet" href="route.css" type="text/css"/>
+
+<link text="text/javascript" href="jquery-ui.min.js"/>
+
+
+</head>
+
+<body>
+<div id="mainWrapper">
+		<div id="main">
+					<header class="route-header">
+							
+							<button id="route-header-btn-back"></button>
+							<span class="route-header-label"> Route eintragen </span>
+							<button id="route-header-btn-check" class="check"><img src="img/check.png" /></button>
+					</header>
+
+		<div id="wrapper">
+
+			<div id="page1" class="page">
+
+	
+					<div id="page1-content-route-erstellen" >
+						<h1>Route:</h1>
+						<div id="page1-btn-route-erstellen" class="black-btn">
+							<p class="black-btn-text">Route erstellen</p>
+						</div>
+						<div class="route_details">
+						<ul id="ul-route-status"></ul>
+						<div id="page1-btn-route-loeschen" class="red-btn">
+							<p class="red-btn-text">Route löschen</p>
+						</div>
+						</div>
+					</div>
+
+					<div id="page1-content-info">
+						<h1 class="infos">Zusätzliche Infos</h1>
+						<textarea name="info-text" id="page1-content-info-text" cols="30" rows="3"></textarea>
+					</div>
+
+					<div id="page1-content-route-teilen" >
+
+					<div id="page1-btn-route-teilen" class="black-btn">
+					<p class="black-btn-text">Route teilen</p> 
+
+					</div>
+					<span id="lbl-code"></span>
+
+
+					</div>
+		
+
+
+			</div>
+
+<div id="page2" class="page">
+
+
+	<div id="page2-content-zielgebiet-suche" >
+	<h1>Zielgebiet:</h1>
+	<form onSubmit="return false;">
+		<input id = "suchfeld" type="text" name="adresse" placeholder="Geben Sie das Zielgebiet ein" class="search"/>
+		<input  type="button" name="suche" value="Suchen" onclick="ergebnisse()" class="btn_suchen"/> 
+	</form>
+	</div>	
+
+	
+
+		<ul id="zielgebiet-ul"></ul>
+
+</div>
+
+
+<div id="page3" class="page">
+
+	<h1>Zielgebiet:</h1>
+	<div id="page3-content-zielgebiet" >
+	
+		<p id="aktuelles_zeilgebiet">Ergebnis</p>
+		
+
+	</div>	
+
+	<div id="page3-btn-eigene-route" >
+	
+		<p>eigene Route</p>
+		
+	</div>
+
+	<h2 id="page3-gpx-routen-header"></h2>
+
+	<ul id="page3-db-routen">	
+		
+	</ul>
+
+
+
+</div>
+
+<div id="page4" class="page">
+<div id="overlaydiv" class="overlay start">Startpunkt wählen</div>
+
+<div id="map">
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+</div> 
+
+<footer id="footer_page1"><span class="save">Route speichern</span></footer>
+
+</div>
+
+
+<script type="text/javascript" src="route.js"></script>
+<script type="text/javascript"> init_osm(); </script>
+
+
+</body>

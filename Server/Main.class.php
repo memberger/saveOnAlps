@@ -16,16 +16,15 @@ class Main
 	public static function login($email,$password)
 	{	$con = db_connect();
 	
-		$statement = $con->prepare("Select password, user_id from user where email = ?");
+		$statement = $con->prepare("Select userPwd, iduser from user where userName = ?");
 		$statement->execute(array($email));
 		$result = $statement;
-	
+		//echo $email." ".$password;
 	
 		if($result->rowCount()==1) //user mail was correct
 		{	$row = $result->fetch(PDO::FETCH_ASSOC);
-
-			if($row['password']==hash('sha256',$password))
-				return $row['user_id']; //valid logIn
+			if($row['userPwd']==hash('sha256',$password))
+				return $row['iduser']; //valid logIn
 			else
 				return "e103"; //Wrong password
 		}
@@ -36,23 +35,24 @@ class Main
 	//AUTOR: BIBI
 	//registers a new user
 	//RETURN VALUE: string - error code or OK
-	public static function register($email, $password, $username)
+	public static function register($username, $password)
 	{	$con = db_connect();
 	
 		if(!is_string($con))
 		{	//Step 1 see if mail adress is not already registered
-			$statement = $con->prepare("Select * from user where email= ?");
-			$statement->execute(array($email));
+			$statement = $con->prepare("Select * from user where userName= ?");
+			$statement->execute(array($username));
 			$result = $statement;
 			
 			if($result->rowCount()!=0)//if a result was found --> mail already registered!!
 				return "e101";
 			else
 			{	//if everything is ok then insert
-				$query = "Insert into user (email,username,password) values (?,?,?)";
+				$query = "Insert into user (userName, userPwd, vorname, nachname, tel, strasse, hausnummer, plz, ort, land) values (?,?,?,?,?,?,?,?,?,?)";
 				$statement = $con->prepare($query);
-				$statement->execute(array($email,$username,hash('sha256',$password)));
+				$statement->execute(array($username,hash('sha256',$password),'','',0,'','',0,'',''));
 				$id = $con->lastInsertId();
+				//echo $username." ".$password;
 				return "OK";
 			}
 		}
@@ -75,7 +75,7 @@ class Main
 					if($ret != "OK")
 						$data = array('type'=>'User','loggedInUser'=>array('error'=>$ret));
 					else
-						$data = Main::allocateJSON('login',$registerobj);
+						$data = Main::allocateJSON('login',$obj);
 					break;
 			case 'login':
 			$loginobj=$obj['object'];
@@ -115,10 +115,10 @@ class Main
 						break;
 					}
 			case 'eigeneRoute':
-					$ret=Main::insertOwnRoute($obj);
-					if(!is_numeric($ret))
+					$ret=Main::insertOwnRoute($obj['object']);
+					if(is_numeric($ret))
 						{
-						  $data = array('success'=>false, 'type'=>'ownRoute');
+						  $data = array('success'=>false, 'type'=>'ownRoute', 'error'=>$ret);
 					  	}
 					  	else
 					  	{
@@ -127,6 +127,32 @@ class Main
 						  $data['success']=true;
 					 	}
 					break;
+			case 'RouteStarten':
+					$ret=Main::startRoute($obj['object']);
+					$data=$ret;
+					 	
+					break;
+			case 'RouteBeitreten':
+					$ret=Main::routeBeitreten($obj['object']);
+					$data=$ret;
+					break;		
+					
+			case 'RouteNotfall':
+					$ret=Main::routeNotfall($obj['object']);
+					$data=$ret;
+					break;
+			case 'insertLoc':
+					$ret=Main::routeLocation($obj['object']);
+					$data=$ret;
+					break;	
+			case 'Notfallkontakt':
+					$ret=Main::insertNotfallkontakt($obj['object']);
+					$data=$ret;
+					break;	
+			case 'getNotfallkontakt':
+					$ret=Main::getNotfallkontakt($obj['object']);
+					$data=$ret;
+					break;						
 			default: 
 					$data=array('success'=>false,'type'=>$type, 'data'=>$obj);
 					break;
@@ -136,11 +162,165 @@ class Main
 		
 		return $data;
 	}
-
-	
-	//creates a new Log Entry out of the relevant data
-	public static function createNewLogEntry()
+	public static function getNotfallkontakt($obj)
 	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			
+			$statement = $con->prepare("Select * from notfallkontakt where user_iduser= ?");
+			$statement->execute(array($obj['userID']));
+			$result = $statement;
+			if($result->rowCount()!=0)
+			{
+				//user_iduser, notfallTel, notfallMail, notfallVorname, notfallNachname
+				while($row = $result->fetch(PDO::FETCH_ASSOC))
+				{
+					  $ret=array('success'=>true, 'Telefonnummer'=>$row['notfallTel'], 'Mail'=>$row['notfallMail'], 'Vorname'=>$row['notfallVorname'], 'Nachname'=>$row['notfallNachname']);	
+				}
+				
+			}
+			else
+				$ret=array('success'=>false,'error'=>'no notfallkontakt eingetragen');	
+		}
+		return $ret;
+		
+	}
+	public static function insertNotfallkontakt($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			
+			$statement = $con->prepare("Select * from notfallkontakt where user_iduser= ?");
+			$statement->execute(array($obj['userID']));
+			$result = $statement;
+			if($result->rowCount()==0)
+			{
+				$query="insert into notfallkontakt (user_iduser, notfallTel, notfallMail, notfallVorname, notfallNachname), values (?,?,?,?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($obj['userID'],$obj['Telefonnummer'],$obj['mail'],$obj['Vorname'],$obj['Nachname']));
+			}
+			else
+			{
+				$query="update notfallkontakt set notfallTel=?, notfallMail=?, notfallVorname=?, notfallNachname=? where user_iduser=?";
+				$statement = $con->prepare($query);
+				$statement->execute(array($obj['Telefonnummer'],$obj['mail'],$obj['Vorname'],$obj['Nachname'], $obj['userID']));
+			}
+			
+			$ret=array('success'=>true);	
+			return $ret;
+		}
+		$ret=array('success'=>false);	
+		return $ret;
+		
+	}
+	public static function routeNotfall($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser), values (?,?,?)";
+			$statement = $con->prepare($query);
+			  $statement->execute(array($obj['routeId'], 4,$obj['userID']));
+			  
+			if(!$obj['location'])
+			{
+				$locCoords=$obj['location'];
+				$query = "Insert into location (latitude,longitude) values (?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($locCoords['lat'],$locCoords['lon']));
+				$locid = $con->lastInsertId();
+
+				$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength), values (?,?,?,?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($obj['userID'],$obj['routeId'],$locid,$obj['battery'],$obj['signalStrength']));
+				
+				$ret=array('success'=>true);	
+				return $ret;
+			}
+			
+			
+		}
+		$ret=array('success'=>false);	
+		return $ret;
+	}
+	
+	public static function routeLocation($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			
+				$coords=$obj['coords'];
+				for($i=0; $i<count($coords); $i++)
+				{
+					$locCoords=$coords[$i];
+					$query = "Insert into location (latitude,longitude, accuracy) values (?,?,?)";
+					$statement = $con->prepare($query);
+					$statement->execute(array($locCoords['lat'],$locCoords['lon'],$locCoords['accuracy']));
+					$locid = $con->lastInsertId();
+					
+					$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength), values (?,?,?,?,?)";
+					$statement = $con->prepare($query);
+					$statement->execute(array($obj['userID'],$obj['routeId'],$locid,$obj['battery'],$obj['signalStrength']));
+			
+					
+				}			
+			
+			$ret=array('success'=>true);	
+			return $ret;
+		}
+		$ret=array('success'=>false);	
+		return $ret;
+	}
+	public static function routeBeitreten($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			$statement = $con->prepare("Select * from route inner join route_has_routeStatus on route.idroute=route_has_routeStatus.route_idroute where routeCode= ?");
+			  $statement->execute(array($obj['code']));
+			  $result = $statement;
+			  if($result->rowCount()!=0)
+   			  {
+				 while($row = $result->fetch(PDO::FETCH_ASSOC))
+				  {	  
+					  $ret=array('routeID'=>$row['idroute'],'success'=>true,'routeStatus'=>$row['routeStatus_idrouteStatus']);
+				  }
+				  
+			  }
+			  else
+			  	$ret=array('success'=>false, 'error'=>'keineRouteGefunden');
+			  
+		}
+		else
+			$ret=array('success'=>false, 'error'=>'Datenbankfehler');
+				
+		 return $ret;
+	}
+	
+	public static function startRoute($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			$query = "Insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_userid) values (?,?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($obj['routeID'],1,$obj['userID']));
+				
+				$ret=array('routeid'=>$obj['routeID'],'success'=>true);				
+				$con=null;
+				return $ret;
+		}
+		$ret=array('success'=>false);	
+		return $ret;
 	}
 	
 	public static function insertGPX($obj)
@@ -148,14 +328,15 @@ class Main
 		$con = db_connect();
 		
 		if(!is_string($con))
-		{	//Step 1 see if mail adress is not already registered
+		{	
+		
 			$statement = $con->prepare("Select * from predefinedRoute where predefinedName= ?");
 			$statement->execute(array($obj['name']));
 			$result = $statement;
 			$routeid=0;
 			
-			if($result->rowCount()!=0)//if a result was found --> mail already registered!!
-				return "e101";
+			if($result->rowCount()!=0)//if a result was found --> there is already a gpx with this name in the db
+				return "101";
 			else
 			{	
 				
@@ -198,28 +379,38 @@ class Main
 		{	//Step 1
 			//checkCode
 			
-			$code=rand();
+			$code=rand()%100000;
 			$foundCode=false;
 			while(!$foundCode)
 			{
 			  $statement = $con->prepare("Select * from route where routeCode= ?");
-			  $statement->execute(array($obj['name']));
+			  $statement->execute(array($obj['userID']+''+$obj['routeName']));
 			  $result = $statement;
+			  
 			  if($result->rowCount()==0)
 			  {
 				  $foundCode=true;
 			  }
+			  else
+			  {
+				$code=rand()%100000;	
+			  }
 			}
-		
-			$statement = $con->prepare("insert into route (user_iduser, routeInfo,routeCode,predefinedRoute_idpredefineRoute,richtigeRichtung values(?,?,?,?,?,?)");
-			$statement->execute(array($obj['userID'],$obj['info'],$code,$obj['gpxID'],$obj['richtigeRichtung']));
-			$result = $statement;
+			if(!$obj['gpxID']||$obj['gpxID']=="")
+				$obj['gpxID']=null;
+			if(!$obj['richtigeRichtung'])
+				$obj['richtigeRichtung']=false;
+			
+			$query=	"insert into route (user_iduser,routeName, routeInfo,routeCode,predefinedRoute_idpredefinedRoute,richtigeRichtung) values(?,?,?,?,?,?)";
+			$statement = $con->prepare($query);
+			$statement->execute(array($obj['userID'],$obj['routename'],$obj['routeinfo'],$code,$obj['gpxID'],$obj['richtigeRichtung']));
+			
 			$routeid = $con->lastInsertId();	
 			
 				//if everything is ok then insert
 				$query = "Insert into route_has_status (route_idroute,routesStatus_idrouteStatus,user_iduser) values (?,?,?)";
 				$statement = $con->prepare($query);
-				$statement->execute(array($routeid,0,$obj['userID']));
+				$statement->execute(array($routeid,2,$obj['userID']));
 				
 				$coords=$obj['coords'];
 				for($i=0; $i<count($coords); $i++)
@@ -227,23 +418,23 @@ class Main
 					$locCoords=$coords[$i];
 					$query = "Insert into location (latitude,longitude) values (?,?)";
 					$statement = $con->prepare($query);
-					$statement->execute(array($locCoords['lat'],$locCoords['long']));
+					$statement->execute(array($locCoords['lat'],$locCoords['lon']));
 					$locid = $con->lastInsertId();
 					
-					$query = "Insert into registeredRoute (idlocatin,idroute,pointNr) values (?,?,?)";
+					$query = "Insert into registeredRoute (idlocation,idroute,pointNr) values (?,?,?)";
 					$statement = $con->prepare($query);
 					$statement->execute(array($locid,$routeid,$i));
 					
 				}
 				
 				
-				return array('routeID'=>$routeid,'success'=>true,'code'=>$code);
+				return array('routeID'=>$routeid,'success'=>true,'code'=>$code,'locid'=>$locid,'number'=>count($coords),'i'=>$i);
 				
 				
 			
 		}
 		else
-			return "e100";
+			return "100";
 	}
 	
 	

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>My first web app</title>
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" >
+<meta name = "apple-mobile-web-app-capable" content="yes" >
+
+
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.css" />
+
+<script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
+
+<!-- Thomas -->
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+<script type="text/javascript" src="map_script.js"> </script>
+
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<link text="text/javascript" href="jquery-ui.min.js"/>
+
+</head>
+
+<body>
+
+
+
+	<header>
+		<section id="logo">
+			<p class="kontrapunkt"><span class="blue">save</span>OnAlps</p>
+		</section>
+	</header>
+
+
+
+
+	<section id="route-eintragen-detail" class="route-eintragen-tab">
+		<button id="tab-detail" ontouchend = showDetail()>Details</button>
+		<button id="tab-karte"  ontouchend = showKarte()> Karte</button>
+
+		<p> Routenname </p>
+		<p> Startpunkt Ok</p>
+		<p> Zwischenpunkte mindestens einer </p>
+		<p> Endpunkt </p>
+
+		<p>zusätzliche Informationen</p>
+
+	</section>
+
+
+
+	<section id="route-eintragen-karte" class="route-eintragen-tab">
+		<button id="tab-detail" ontouchend = showDetail()>Details</button>
+		<button id="tab-karte"  ontouchend = showKarte()> Karte</button>
+
+				<section id="suche">
+					<form onSubmit="return false;">
+						<input id = "suchfeld" type="text" name="adresse" />
+						<input  type="button" name="suche" value="Suchen" onclick="ergebnisse()" /> 
+					</form>
+				</section>
+				<section id="suchergebnisse">
+				
+				</section>
+				<section id="karte">
+				
+				<!--Hier die Karte einbinden!!!!!! -->	
+				<div id="map_canvas">
+			
+				</div>
+				
+				</section>	
+
+
+
+	</section>
+
+
+						
+				
+		
+
+		
+		
+		<footer>
+		
+        <!--<button id="speichern" onClick="insertRouteRequest()">-->
+		<button id="speichern" ontouchend="window.location='index.html'">
+		<p>Speichern</p>
+		</button>
+        </a>
+		</footer>
+		<!--<script type="text/javascript"> checkLocalStorage_Route();</script>-->
+		<script type="text/javascript"> init_osm(); </script>
+		<script type="text/javascript">
+
+			var divKarte  = document.getElementById("route-eintragen-karte");
+			var divDetail = document.getElementById("route-eintragen-detail"); 
+
+			divKarte.style.display  = "none";
+			
+
+			function showDetail(){
+
+				divKarte.style.display  = "none";
+				divDetail.style.display = "block";
+				console.log("touched");
+				
+
+			}
+			
+
+			function showKarte(){
+				
+
+				divKarte.style.display  = "block";
+				divDetail.style.display = "none";
+				console.log("touched");
+
+
+			}
+
+
+
+
+		</script>
+
+		
+</body>
+</html>
