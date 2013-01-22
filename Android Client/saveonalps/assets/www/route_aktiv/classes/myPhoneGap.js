@@ -3,13 +3,11 @@
 
 myPhoneGap = function(){
 
-var myContact = JSON.parse(localStorage.myContact);
-
-
-this.telNotfall = myContact.object.Telefonnummer;
+this.telNotfall = "06769108657";
 
 this.battery = 100;
 
+this.batteryListener();
 this.phoneOnline();
 
 }
@@ -59,7 +57,27 @@ myPhoneGap.prototype.checkConnection = function(){
 
 }
 
+myPhoneGap.prototype.checkBattery = function(){
 
+
+	var battery = info.level;
+	return battery;
+
+
+}
+// Updated Battery bei Änderung des Battery Levels
+myPhoneGap.prototype.batteryListener = function(){
+
+	var that = this;
+
+	document.addEventListener("batterystatus", onBatteryStatus, false);
+
+	function onBatteryStatus(info) {
+    // Handle the online event
+    that.battery = info.level;
+    alert(info.level);
+    }
+}
 // Sobald Phone wieder online wird die currentPosition eingetragen
 myPhoneGap.prototype.phoneOnline = function(){
 

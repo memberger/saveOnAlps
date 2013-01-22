@@ -201,26 +201,11 @@ ajax.connectCommunicator(json.type,json);
 }
 
 
-window.addEventListener('load', function(){onLoad();}, false);
+window.addEventListener("batterystatus", onBatteryStatus, false);
 
-    function onLoad() {
-    	
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
-    // Cordova is loaded and it is now safe to make calls Cordova methods
-    //
-    function onDeviceReady() {
-        window.addEventListener("batterystatus", onBatteryStatus, false);
-    }
-
-    // Handle the batterystatus event
-    //
-    function onBatteryStatus(info) {
-    
-    	
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged); 
-        myPGap.battery = info.level;
-    }
+function onBatteryStatus(info) {
+    // Handle the online event
+    alert("Level: " + info.level + " isPlugged: " + info.isPlugged); 
+}
 
 

@@ -14,6 +14,46 @@
 
 <link text="text/javascript" href="jquery-ui.min.js"/>
 
+<script type="text/javascript">
+function login(){
+var loginForm = document.getElementById("login");
+
+var send_obj =
+    {    "type":"login",
+        "object":
+        {    "email": loginForm.email.value,
+            "password": loginForm.pword.value
+        }
+    };
+window.localStorage.setItem("send_obj",send_obj);
+loginRequest(send_obj);
+
+window.location = "home.html";
+}
+
+function register(){
+var registerForm = document.getElementById("register");
+
+if(registerForm.pword1.value==registerForm.pword2.value){
+var send_obj =
+    {    "type":"register",
+        "object":
+        {    "email": registerForm.email.value,
+            "password": registerForm.pword1.value
+        }
+    };
+window.localStorage.setItem("send_obj",send_obj);
+registerRequest(send_obj);
+window.location = "home.html";
+}
+else{
+alert("Passwörter nicht gleich!!!")
+}
+
+}
+
+</script>
+
 </head>
 
 <body>
@@ -38,9 +78,7 @@
 		</form>
 	</section>
 
-	<section class="Fehler">
-			<span class="errorMessage" id="errorMessage"></span>
-	</section>
+
 
 	<section>
 		<h1>Registrieren</h1>
@@ -68,112 +106,7 @@
         </a>
 		</footer>
 		<!--<script type="text/javascript"> checkLocalStorage_Route();</script>-->
-<script type="text/javascript">
-var errorMessage = document.getElementById("errorMessage");
-while (errorMessage.firstChild){
-	errorMessage.removeChild(errorMessage.firstChild);
-}
-var ajax = {
-communicatorURL : "http://flock-0312.students.fhstp.ac.at/server/communicator.php?callback=meins",
-currentName : null,
-connectCommunicator : function(pname,json){
-
-	this.currentName = pname;
-	
-	var xmlhttp=new XMLHttpRequest();
-	var that = this;
-	
-	xmlhttp.onreadystatechange = function() {
-		if(xmlhttp.readyState==4){
-			console.log(that.currentName);
-			json=JSON.parse(xmlhttp.responseText);
-			that.render(that.currentName,json);
-	
-			//renderGetRouteAtResponse(json)  //daten an die funktion render übergeben (render muss man selbst programmieren)
-		}
-	 };
-	var jsonString = JSON.stringify(json);	
-	xmlhttp.open("POST", this.communicatorURL, true);
-	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	xmlhttp.send("json="+jsonString);
-
-
-
-},
-render : function(name,json){
-	
-
-	if(json.type == "User"){
-		if(json.loggedInUser.password){
-			window.localStorage.setItem("userId",json.userID);
-			window.location = "home.html";
-		}
-		else{
-			var message;
-			if(json.loggedInUser.error == "e101"){
-				message = document.createTextNode("Ein User mit dieser Email-Adresse ist bereits registriert");
-				errorMessage.appendChild(message);
-			}
-			if(json.loggedInUser.error == "e102"){
-				message = document.createTextNode("Ein User mit dieser Email-Adresse ist nicht registriert");
-				errorMessage.appendChild(message);
-			}
-			if(json.loggedInUser.error == "e103")
-			{
-				message = document.createTextNode("Das angegebene Passwort ist leider falsch");
-				errorMessage.appendChild(message);
-			}
-		}
-
-	}
-
-
-	} 
-
-}
-
-function login(){
-var loginForm = document.getElementById("login");
-while (errorMessage.firstChild){
-	errorMessage.removeChild(errorMessage.firstChild);
-}
-var send_obj =
-    {    "type":"login",
-        "object":
-        {    "email": loginForm.email.value,
-            "password": loginForm.pword.value
-        }
-    };
-
-ajax.connectCommunicator(send_obj.type,send_obj);
-
-}
-
-function register(){
-var registerForm = document.getElementById("register");
-while (errorMessage.firstChild){
-	errorMessage.removeChild(errorMessage.firstChild);
-}
-
-if(registerForm.pword1.value != registerForm.pword2.value){
-	message = document.createTextNode("Es wurden zwei unterschiedliche Passwörter eigegeben");
-	errorMessage.appendChild(message);
-}
-else{
-var send_obj =
-    {    "type":"register",
-        "object":
-        {    "email": registerForm.email.value,
-            "password": registerForm.pword1.value
-        }
-    };
-
-ajax.connectCommunicator(send_obj.type,send_obj);
-}
-
-}
-
-</script>		
+		
 	
 		
 </body>

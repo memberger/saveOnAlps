@@ -157,15 +157,15 @@ Map.prototype.saveCoords = function(){
 		
 		json = { "type":"insertLoc",
 				 "object": {	
-					 	"routeId":myRoute.object.routeID,
-					 	"userID":localStorage.userId,
-					 	"coords":myMap.coords,// lat:"11111", lon:"8344784", accuracy:"934"
-					 	"battery":myPGap.battery,//0-100 
-					 	"signalStrength":myPGap.checkConnection()//0 oder 1
+					 	"routeID":myRoute.object.routeID,
+					 	"userID":myRoute.object.userID,
+					 	"coords":myMap.coords,
+					 	"battery":myPGap.battery,
+					 	"signalStrength":myPGap.checkConnection()
 				 }
 		}
 
-		console.log(json);
+		
 		ajax.connectCommunicator(json.type,json);		
 
 

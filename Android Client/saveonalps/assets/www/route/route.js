@@ -33,8 +33,8 @@ if (localStorage.myRoute == undefined){
 	       		"routeinfo": "",
 		        "routecode": "",
 		        "zielgebiet":"",
-				"userID":localStorage.userID,
-				"routeID" : "",//ändern Wenn DB funktioniert
+				"userID":1,
+				"routeID" : 1,//ändern Wenn DB funktioniert
 				"gpxID": "",
 				"richtigeRichtung":true,
 				"coords":[]
@@ -60,18 +60,6 @@ document.getElementById("footer_page1").addEventListener('click',function(){
 
 	myRoute.object.routeinfo = d.getElementById("page1-content-info-text").value;
 	ajax.connectCommunicator(myRoute.type, myRoute);
-
-
-});
-
-
-document.getElementById("page1-btn-route-teilen").addEventListener('click',function(){
-
-	var d = document;
-
-	myRoute.object.routeinfo = d.getElementById("page1-content-info-text").value;
-	ajax.connectCommunicator("routeTeilen", myRoute);
-
 
 
 });
@@ -530,40 +518,6 @@ if(name == "eigeneRoute"){
 	console.log(json);
 
 }
-
-if(name == "eigeneRoute"){
-
-
-	if(json.success){
-	
-		alert("route gespeichert");
-		console.log(json);
-		
-		myRoute.object.routeID = json.routeID;
-		ls.saveMyRoute();
-		
-		console.log(myRoute);
-		
-	
-	}else{
-	
-		alert("speichern fehlgeschlagen");
-	
-	}
-
-}
-
-if(name == "routeTeilen"){
-
-	console.log(json);
-	document.getElementById("lbl-code").textContent = json.code;
-	
-	setHeight();
-
-	
-}
-
-
 
 
 
