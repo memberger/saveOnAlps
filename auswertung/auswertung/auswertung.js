@@ -17,7 +17,7 @@ connectCommunicator : function(pname,json){
 			json=JSON.parse(xmlhttp.responseText);
 			that.render(that.currentName,json);
 	
-			//renderGetRouteAtResponse(json)  //daten an die funktion render Ã¼bergeben (render muss man selbst programmieren)
+			//renderGetRouteAtResponse(json)  //daten an die funktion render übergeben (render muss man selbst programmieren)
 		}
 	 };
 	var jsonString = JSON.stringify(json);	

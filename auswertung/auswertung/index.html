@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- html 5 -->
+﻿<!DOCTYPE html> <!-- html 5 -->
 <html>
 <head>
 <title>Auswertung</title>
@@ -9,15 +9,17 @@
 
 
 <link rel="stylesheet" href="leaflet/leaflet.css" />
+<link rel="stylesheet" href="style.css" type="text/css"/>
 
 <script type="text/javascript" src="leaflet/leaflet.js"></script>
 
 </head>
 
 <body>
+<h1> Auswertung</h1>
 
-<p><button onmousedown="reLoad()">Neuladen</button></p>
-route wählen<input type="number" onChange="updateID()" id='routeNumber' />
+<input type="button" onClick="reLoad()" value="Neu laden">
+<h2>route wählen<input type="number" onChange="updateID()" id='routeNumber' /></h2>
 <p> <span id='routeCount'> </span> Routen gefunden </p>
 
 <div id="info-box"></div><br>
