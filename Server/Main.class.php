@@ -152,7 +152,13 @@ class Main
 			case 'getNotfallkontakt':
 					$ret=Main::getNotfallkontakt($obj['object']);
 					$data=$ret;
-					break;						
+					break;	
+			case 'getAllRoutes':
+					$ret=Main::getAllRoutes($obj['object']);
+					$data=$ret;
+					break;
+			case 'getRouteById':
+					break;							
 			default: 
 					$data=array('success'=>false,'type'=>$type, 'data'=>$obj);
 					break;
@@ -161,6 +167,69 @@ class Main
 		}
 		
 		return $data;
+	}
+	public static function getAllRoutes($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{	//
+		
+				$statement = $con->prepare("Select * from route join user on user_iduser=iduser");
+				$statement->execute(array($lat,$lon,$lat,$lon));
+				$result = $statement;
+				$data=array('routes'=>array());
+				$i=0;
+				while($row = $result->fetch(PDO::FETCH_ASSOC))
+				{	
+					$pRouteID=$row['idroute'];
+					$pRouteName=$row['routeName'];
+					$pUserRoute=$row['userName'];
+					$pRouteInfo=$row['routeInfo'];
+					$pRouteCode=$row['routeCode'];
+					$predefinedRouteId=$row['predefinedRoute_idpredefinedRoute'];
+					$prichtigeRichtung=$row['richtigeRichtung'];
+					$data['routes'][$i]=array('id'=>$pRouteID,'name'=>$pRouteName,'ersteller'=>$pUserRoute,'routeInfo'=>$pRouteInfo,'routeCode'=>$pRouteCode,'predefinedRouteId'=>$predefinedRouteId,'richtigeRichtung'=>$prichtigeRichtung);
+					$data['success']=true;
+					
+					$newquery = "Select latitude,longitude,accuracy,userName,battery,signalStrength from location join routeLoc on idlocation=location_idlocation join user on user_iduser=iduser where route_idroute=? ORDER BY idlocation ASC";
+					
+					$newstatement = $con->prepare($newquery);
+					$newstatement->execute(array($pRouteID));
+					$newresult = $newstatement;
+					
+					$j=0;
+					while($locrow = $newresult->fetch(PDO::FETCH_ASSOC))
+					{	
+							
+							$data['routes'][$i]['coords'][$j]=array('lat'=>$locrow['latitude'],'long'=>$locrow['longitude'],'accu'=>$locrow['accuracy'],'user'=>$locrow['userName'],'battery'=>$locrow['battery'],'signalStrength'=>$locrow['signalStrength']);
+							$j++;	
+							//$locrow['latitude'].$locrow['longitude'];
+					}
+					
+					$statusQuery="select * from route_has_routeStatus inner join routeStatus on idrouteStatus=routeStatus_idrouteStatus join user on user_iduser=iduser where route_idroute=?";
+					$statusStatement = $con->prepare($statusQuery);
+					$statusStatement->execute(array($pRouteID));
+					$statusResult = $statusStatement;
+		
+					while($statusRow = $statusResult->fetch(PDO::FETCH_ASSOC))
+					{	
+							$data['routes'][$i]['status'][]=array('description'=>$statusRow['description'],'timestamp'=>$statusRow['timestamp'],'user'=>$statusRow['userName']);	
+					}
+					
+					$i++;
+				}
+				if($i==0)
+				{
+					$data['success']=false;
+				}
+				
+				return $data;
+				
+				
+			
+		}
+	
 	}
 	public static function getNotfallkontakt($obj)
 	{
@@ -223,19 +292,19 @@ class Main
 		
 		if(!is_string($con))
 		{
-			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser), values (?,?,?)";
+			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser) values (?,?,?)";
 			$statement = $con->prepare($query);
 			  $statement->execute(array($obj['routeId'], 4,$obj['userID']));
 			  
-			if(!$obj['location'])
+			if(!$obj['coords'])
 			{
-				$locCoords=$obj['location'];
-				$query = "Insert into location (latitude,longitude) values (?,?)";
+				$locCoords=$obj['coords'][0];
+				$query = "Insert into location (latitude,longitude, accuracy) values (?,?)";
 				$statement = $con->prepare($query);
-				$statement->execute(array($locCoords['lat'],$locCoords['lon']));
+				$statement->execute(array($locCoords['lat'],$locCoords['lon'], $locCoords['accuracy']));
 				$locid = $con->lastInsertId();
 
-				$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength), values (?,?,?,?,?)";
+				$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength) values (?,?,?,?,?)";
 				$statement = $con->prepare($query);
 				$statement->execute(array($obj['userID'],$obj['routeId'],$locid,$obj['battery'],$obj['signalStrength']));
 				
@@ -265,7 +334,7 @@ class Main
 					$statement->execute(array($locCoords['lat'],$locCoords['lon'],$locCoords['accuracy']));
 					$locid = $con->lastInsertId();
 					
-					$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength), values (?,?,?,?,?)";
+					$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength) values (?,?,?,?,?)";
 					$statement = $con->prepare($query);
 					$statement->execute(array($obj['userID'],$obj['routeId'],$locid,$obj['battery'],$obj['signalStrength']));
 			
@@ -311,7 +380,7 @@ class Main
 		
 		if(!is_string($con))
 		{
-			$query = "Insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_userid) values (?,?,?)";
+			$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser) values (?,?,?)";
 				$statement = $con->prepare($query);
 				$statement->execute(array($obj['routeID'],1,$obj['userID']));
 				
@@ -396,11 +465,11 @@ class Main
 				$code=rand()%100000;	
 			  }
 			}
-			if(!$obj['gpxID']||$obj['gpxID']=="")
+			if(!$obj['gpxID'])//||$obj['gpxID']=="")
 				$obj['gpxID']=null;
 			if(!$obj['richtigeRichtung'])
 				$obj['richtigeRichtung']=false;
-			
+			// 	user_iduser 	routeName 	routeInfo 	routeCode 	predefinedRoute_idpredefinedRoute 	richtigeRichtung
 			$query=	"insert into route (user_iduser,routeName, routeInfo,routeCode,predefinedRoute_idpredefinedRoute,richtigeRichtung) values(?,?,?,?,?,?)";
 			$statement = $con->prepare($query);
 			$statement->execute(array($obj['userID'],$obj['routename'],$obj['routeinfo'],$code,$obj['gpxID'],$obj['richtigeRichtung']));
@@ -408,7 +477,7 @@ class Main
 			$routeid = $con->lastInsertId();	
 			
 				//if everything is ok then insert
-				$query = "Insert into route_has_status (route_idroute,routesStatus_idrouteStatus,user_iduser) values (?,?,?)";
+				$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser) values (?,?,?)";
 				$statement = $con->prepare($query);
 				$statement->execute(array($routeid,2,$obj['userID']));
 				

@@ -18,7 +18,7 @@ this.coords = [];
 this.notfallCoord;
 this.mapViewActive = false;
 this.circle;
-this.updateTime = 2;
+this.updateTime = 1;
 this.savedCoords = 0;
 
 this.hideMap();
@@ -66,7 +66,7 @@ function currentPosSuccess(pos){
 	};
 
 	that.coords.push(obj);
-	that.notfallCoord = { "lat" : obj.lat , "lon" : obj.lon };
+	that.notfallCoord = { "lat" : obj.lat , "lon" : obj.lon, "accuracy" : obj.accuracy };
 	
 	if(myPGap.checkConnection()!=0){	
 		console.log("coords speichern");
@@ -114,13 +114,13 @@ Map.prototype.updateMap = function(){
 	var coords = this.coords;
 	var map = this.map;
 	var circle = this.circle;
-	var lat = coords[coords.length-1].lat;
-	var lon = coords[coords.length-1].lon;
+	var lat = this.notfallCoord.lat;
+	var lon = this.notfallCoord.lon;
 
 	var point = new L.LatLng(lat,lon);
 
 	if(circle == undefined){
-		circle = L.circle(point, Math.round(coords[coords.length-1].accuracy/2), {
+		circle = L.circle(point, Math.round(this.notfallCoord.accuracy/2), {
 	    color: 'red',
 	    fillColor: '#f03',
 	    fillOpacity: 0.1
@@ -139,8 +139,8 @@ Map.prototype.updateMap = function(){
 Map.prototype.updateAnzeige = function(){
 
 	var d = document;
-	if(this.coords[this.coords.length-1] != undefined){
-	var coord = this.coords[this.coords.length-1];
+	if(this.notfallCoord != undefined){
+	var coord = this.notfallCoord;
 		d.getElementById("info_lat").textContent =  Math.round(coord.lat*1000000)/1000000;
 		d.getElementById("info_long").textContent = Math.round(coord.lon*1000000)/1000000;
 		d.getElementById("info_accu").textContent = Math.round(coord.accuracy)+"m";
@@ -157,15 +157,15 @@ Map.prototype.saveCoords = function(){
 		
 		json = { "type":"insertLoc",
 				 "object": {	
-					 	"routeID":myRoute.object.routeID,
-					 	"userID":myRoute.object.userID,
-					 	"coords":myMap.coords,
-					 	"battery":myPGap.battery,
-					 	"signalStrength":myPGap.checkConnection()
+					 	"routeId":myRoute.object.routeID,
+					 	"userID":localStorage.userId,
+					 	"coords":myMap.coords,// lat:"11111", lon:"8344784", accuracy:"934"
+					 	"battery":myPGap.battery,//0-100 
+					 	"signalStrength":myPGap.checkConnection()//0 oder 1
 				 }
 		}
 
-		
+		console.log(json);
 		ajax.connectCommunicator(json.type,json);		
 
 

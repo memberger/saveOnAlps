@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- html 5 -->
+<html>
+<head>
+<title>Auswertung</title>
+<meta charset="utf-8" />
+
+
+<meta name = "viewport" content = "width = device-width, maximum-scale = 1, minimum-scale = 1, user-scalable = no">
+
+
+<link rel="stylesheet" href="leaflet/leaflet.css" />
+
+<script type="text/javascript" src="leaflet/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<p><button onmousedown="reLoad()">Neuladen</button></p>
+route wählen<input type="number" onChange="updateID()" id='routeNumber' />
+<p> <span id='routeCount'> </span> Routen gefunden </p>
+
+<div id="info-box"></div><br>
+
+<div id="map" style="width:1000px;height:800px;border:1px solid red;"></div>
+
+
+
+<script type="text/javascript" src="auswertung.js"  charset="UTF-8"> </script>
+</body>

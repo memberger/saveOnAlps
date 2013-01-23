@@ -36,12 +36,12 @@
 				Route eintragen
 				</button>
 				<hr> </hr>
-				<button id="notfall" class="interaction">
+				<button id="notfall" class="interaction" onclick="window.location='routeBeitreten.html'">
 				Route beitreten
 				</button>
 				</section>	
 				
-				<button id="route_eintragen" class="interaction">
+				<button id="route_eintragen" class="interaction" onclick="window.location='notfallKontakt_setzen.html'">
 				Notfallkontakt<br/>
 				<span class="smaller">Max Mustermann, +432567..</span>
 				</button></a>		
@@ -61,7 +61,7 @@
 
 
 <script type="text/javascript"> 
-
+var myRoute;
 
 	var ls = {
 		"ls" : localStorage,
@@ -73,6 +73,30 @@
 
 	}
 
+if (localStorage.myRoute == undefined){
+
+myRoute = {
+	"type":"eigeneRoute",
+	"object": {	
+				"routename": "",
+	       		"routeinfo": "",
+		        "routecode": "",
+		        "zielgebiet":"",
+				"userID":1,
+				"routeID" : 1,//ändern Wenn DB funktioniert
+				"gpxID": "",
+				"richtigeRichtung":true,
+				"coords":[]
+	
+				}
+
+	}
+	
+}else{
+
+myRoute = ls.loadMyRoute();
+
+}
 
 var ajax = {
 communicatorURL : "http://flock-0312.students.fhstp.ac.at/server/communicator.php?callback=meins",
@@ -106,8 +130,15 @@ render : function(name,json){
 
 	if(name == "RouteStarten"){
 		
-		console.log(json);
-
+		if(json.success){
+		
+			 window.location = "route_aktiv/main.html";
+		
+		}else{
+		
+			alert("Route kann nicht gestartet werden");
+		
+		}
 	}
 
 
@@ -116,29 +147,28 @@ render : function(name,json){
 }
 
 
-var myRouteObj = ls.loadMyRoute();
-console.log(myRouteObj);
+//var myRouteObj = ls.loadMyRoute();
+//console.log(myRoute);
 
 
-if(myRouteObj.object.route_id != "")
+if(myRoute.object.route_id != "")
 {
 	var d = document;
 
 	d.getElementById("route_starten").disabled=false;
-
 	d.getElementById("route_starten").addEventListener("click", function(){
 
 			var json = {
 		
 				"type":"RouteStarten",
 				"object": {	
-				"routeID":myRouteObj.object.routeID
+				"routeID":myRoute.object.routeID
 				}		
 			}
 
 			ajax.connectCommunicator(json.type,json);
 
-			window.location = "route_aktiv/main.html";
+		    
 
 	});
 	
@@ -147,7 +177,7 @@ if(myRouteObj.object.route_id != "")
 }else{
 
 	document.getElementById("route_starten").disabled=true;
-
+	
 }
 
 </script>

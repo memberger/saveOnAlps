@@ -37,13 +37,12 @@ render : function(name,json){
 	if(name == "insertLoc"){
 
 		console.log(json);
-		if(json.succes){
-			console.log("coords eingetragen");
+		if(json.success){
 			myMap.minutes = 0;
 			myMap.savedCoords += myMap.coords.length;
-			mayMap.coords = [];
+			myMap.coords = [];
 		}else{
-			alert("coords konnten nicht eingetragen werden")
+		
 		}
 
 	}
@@ -150,7 +149,7 @@ function updateIndikator(){
     
     // accuracy
     
-    var indikatorAccu = myMap.coords[myMap.coords.length-1].accuracy;
+    var indikatorAccu = myMap.notfallCoord.accuracy;
     if (indikatorAccu >= 200)indikatorAccu = 200;
     else if (indikatorAccu <= 20)indikatorAccu = 0;
     var faktor = Math.round(indikatorAccu / 20)*0.05;
@@ -201,11 +200,26 @@ ajax.connectCommunicator(json.type,json);
 }
 
 
-window.addEventListener("batterystatus", onBatteryStatus, false);
+window.addEventListener('load', function(){onLoad();}, false);
 
-function onBatteryStatus(info) {
-    // Handle the online event
-    alert("Level: " + info.level + " isPlugged: " + info.isPlugged); 
-}
+    function onLoad() {
+    	
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to make calls Cordova methods
+    //
+    function onDeviceReady() {
+        window.addEventListener("batterystatus", onBatteryStatus, false);
+    }
+
+    // Handle the batterystatus event
+    //
+    function onBatteryStatus(info) {
+    
+    	
+        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged); 
+        myPGap.battery = info.level;
+    }
 
 

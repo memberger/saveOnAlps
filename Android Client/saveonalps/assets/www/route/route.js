@@ -7,6 +7,8 @@ var currentZielgebiet = {
 
 };
 
+var myRoute;
+
 var ls = {
 "ls" : localStorage,
 "saveMyRoute" : function(){
@@ -22,7 +24,6 @@ var ls = {
 
 }
 
-var myRoute;
 
 if (localStorage.myRoute == undefined){
 
@@ -33,8 +34,8 @@ if (localStorage.myRoute == undefined){
 	       		"routeinfo": "",
 		        "routecode": "",
 		        "zielgebiet":"",
-				"userID":1,
-				"routeID" : 1,//ändern Wenn DB funktioniert
+				"userID":localStorage.userId,
+				"routeID" : "",//ändern Wenn DB funktioniert
 				"gpxID": "",
 				"richtigeRichtung":true,
 				"coords":[]
@@ -47,8 +48,9 @@ if (localStorage.myRoute == undefined){
 
 ls.loadMyRoute();
 
-
 }
+
+myRoute.object.userID = localStorage.userId;
 
 
 renderStartPage();
@@ -59,7 +61,29 @@ document.getElementById("footer_page1").addEventListener('click',function(){
 	var d = document;
 
 	myRoute.object.routeinfo = d.getElementById("page1-content-info-text").value;
+	document.getElementById("lbl-code").textContent = "";
 	ajax.connectCommunicator(myRoute.type, myRoute);
+	
+
+
+});
+
+
+document.getElementById("page1-btn-route-teilen").addEventListener('click',function(){
+
+	var d = document;
+
+	myRoute.object.routeinfo = d.getElementById("page1-content-info-text").value;
+	if(myRoute.object.routeID!="")
+	{
+		ajax.connectCommunicator("routeTeilen", myRoute);
+	}
+	else
+	{
+		document.getElementById("lbl-code").textContent = myRoute.object.routecode;
+		setHeight();
+	}
+
 
 
 });
@@ -356,7 +380,7 @@ window.addEventListener('touchmove',function(evt){
 
 window.addEventListener('touchend',function(evt){
 
-	console.log(scroll);
+	//console.log(scroll);
 });
 
 
@@ -513,11 +537,44 @@ if(name == "requestGpx"){
 
 }
 
+
+
 if(name == "eigeneRoute"){
 
-	console.log(json);
+
+	if(json.success){
+	
+		alert("route gespeichert");
+		console.log(json);
+		
+		myRoute.object.routeID = json.routeID;
+		ls.saveMyRoute();
+		
+		console.log(myRoute);
+		
+	
+	}else{
+	
+		alert("speichern fehlgeschlagen");
+	
+	}
 
 }
+
+if(name == "routeTeilen"){
+
+	console.log(json);
+	document.getElementById("lbl-code").textContent = json.code;
+	
+	myRoute.object.routeID = json.routeID;
+		ls.saveMyRoute();
+	
+	setHeight();
+
+	
+}
+
+
 
 
 
