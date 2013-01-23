@@ -292,9 +292,11 @@ class Main
 		
 		if(!is_string($con))
 		{
-			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser) values (?,?,?)";
+			$date = new DateTime();
+			$timestamp = date('Y-m-d H:i:s',$date->getTimestamp());
+			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser,timestamp) values (?,?,?,?)";
 			$statement = $con->prepare($query);
-			  $statement->execute(array($obj['routeId'], 4,$obj['userID']));
+			  $statement->execute(array($obj['routeId'], 4,$obj['userID'],$timestamp));
 			  
 			if(!$obj['coords'])
 			{
@@ -324,14 +326,16 @@ class Main
 		
 		if(!is_string($con))
 		{
+			$date = new DateTime();
+			$timestamp = date('Y-m-d H:i:s',$date->getTimestamp());
 			
 				$coords=$obj['coords'];
 				for($i=0; $i<count($coords); $i++)
 				{
 					$locCoords=$coords[$i];
-					$query = "Insert into location (latitude,longitude, accuracy) values (?,?,?)";
+					$query = "Insert into location (latitude,longitude, accuracy,timestamp) values (?,?,?,?)";
 					$statement = $con->prepare($query);
-					$statement->execute(array($locCoords['lat'],$locCoords['lon'],$locCoords['accuracy']));
+					$statement->execute(array($locCoords['lat'],$locCoords['lon'],$locCoords['accuracy'],$timestamp));
 					$locid = $con->lastInsertId();
 					
 					$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength) values (?,?,?,?,?)";
@@ -380,9 +384,11 @@ class Main
 		
 		if(!is_string($con))
 		{
-			$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser) values (?,?,?)";
+			$date = new DateTime();
+			$timestamp = date('Y-m-d H:i:s',$date->getTimestamp());
+			$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser,timestamp) values (?,?,?,?)";
 				$statement = $con->prepare($query);
-				$statement->execute(array($obj['routeID'],1,$obj['userID']));
+				$statement->execute(array($obj['routeID'],1,$obj['userID'],$timestamp));
 				
 				$ret=array('routeid'=>$obj['routeID'],'success'=>true);				
 				$con=null;
@@ -475,11 +481,13 @@ class Main
 			$statement->execute(array($obj['userID'],$obj['routename'],$obj['routeinfo'],$code,$obj['gpxID'],$obj['richtigeRichtung']));
 			
 			$routeid = $con->lastInsertId();	
+			$date = new DateTime();
+			$timestamp = date('Y-m-d H:i:s',$date->getTimestamp());
 			
 				//if everything is ok then insert
-				$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser) values (?,?,?)";
+				$query = "Insert into route_has_routeStatus (route_idroute,routeStatus_idrouteStatus,user_iduser,timestamp) values (?,?,?,?)";
 				$statement = $con->prepare($query);
-				$statement->execute(array($routeid,2,$obj['userID']));
+				$statement->execute(array($routeid,2,$obj['userID'],$timestamp));
 				
 				$coords=$obj['coords'];
 				for($i=0; $i<count($coords); $i++)
