@@ -380,7 +380,7 @@ window.addEventListener('touchmove',function(evt){
 
 window.addEventListener('touchend',function(evt){
 
-	//console.log(scroll);
+	console.log(scroll);
 });
 
 

@@ -3,6 +3,7 @@
 
 myPhoneGap = function(){
 
+
 var myContact = JSON.parse(localStorage.myContact);
 
 
