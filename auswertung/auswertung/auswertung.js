@@ -67,7 +67,6 @@ L.tileLayer('http://a.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 
 
 
-
 function reLoad()
 {
 	var send_obj = {
@@ -126,17 +125,67 @@ function updateMapMarkers()
 			
 			if(typeof routeValue.coords!='undefined')
 			{
-			routeValue.coords.foreach(function( ck, coordsValue ) {
-			//console.log(coordsValue.lat+" "+coordsValue.long);
-			markers.push(L.circle([coordsValue.lat,coordsValue.long], coordsValue.accu/4, {
-				color: 'red',
-				fillColor: '#f03',
-				fillOpacity: 0.1}));
-				markers[markers.length-1].addTo(map).bindPopup("User: "+coordsValue.user+" |Akku: "+coordsValue.battery+" |Empfang: "+coordsValue.signalStrength);
-				
-			
-			});
+			  routeValue.coords.foreach(function( ck, coordsValue ) {
+			  //console.log(coordsValue.lat+" "+coordsValue.long);
+			  markers.push(L.circle([coordsValue.lat,coordsValue.long], coordsValue.accu/4, {
+				  color: 'red',
+				  fillColor: '#f03',
+				  fillOpacity: 0.1}));
+				  markers[markers.length-1].addTo(map).bindPopup("User: "+coordsValue.user+" |Akku: "+coordsValue.battery+" |Empfang: "+coordsValue.signalStrength);
+				  
+			  
+			  });
 			}
+			
+			if(typeof routeValue.preCoords!='undefined')
+			{
+				var icon;
+			  routeValue.preCoords.foreach(function( ck, coordsValue ) {
+				
+				if(coordsValue.pointNr == 0){
+					icon = L.icon({
+					iconUrl: 'img/start.png',
+					iconSize: [30, 37],
+					iconAnchor: [15, 37]
+					
+					});
+					
+				}
+				if(coordsValue.pointNr == 1){
+					icon = L.icon({
+					iconUrl: 'img/end.png',
+					iconSize: [30, 37],
+					iconAnchor: [15, 37]
+					});	
+				}
+				
+					if(coordsValue.pointNr > 1 && coordsValue.pointNr <= 100){
+					  if(coordsValue.pointNr<=10){
+						icon = L.divIcon({
+						  iconSize: [30, 37],
+						  iconAnchor: [15, 37],
+						  className: 'mapicon',
+						  html: "<img src='img/over.png' /> <div>"+"0"+(coordsValue.pointNr-1)+"</div>"
+						  });
+					  }
+					  else{
+						icon = L.divIcon({
+						  iconSize: [30, 37],
+						  iconAnchor: [15, 37],
+						  className: 'mapicon',
+						  html: "<img src='img/over.png' /> <div>"+(coordsValue.pointNr-1)+"</div>"
+						  });
+					  }
+				  		
+					}
+					
+					   markers.push(L.marker([coordsValue.lat,coordsValue.long],  {
+				 	  	draggable: false,
+					 	 icon: icon}).addTo(map));
+				});
+			}
+			  
+					
 			  
 				
 				//linien!

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Route</title>
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale= 1.0, user-scalable=0" >
+<meta name = "apple-mobile-web-app-capable" content="yes" >
+
+<script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+<script type="text/javascript" src="script.js"> </script>
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="route/route.css" type="text/css"/>
+
+
+<link text="text/javascript" href="jquery-ui.min.js"/>
+
+
+
+
+
+</head>
+
+<body>
+<div class="container">
+	
+		<header class="route-header">
+
+			<button id="route-header-btn-back"></button>
+			<span class="route-header-label"> Notfall Kontakt </span>
+		</header>
+		<section class="home-content home-wrapper">
+            <section class="content">
+             <form class="contact" id="contactForm" onsubmit=false>
+                <label>Vorname</label><input type="text" name="vname" />
+                <label>Nachname</label><input type="text" name="nname" />
+                <label>Telefonnummer</label><input type="text" name="tel" />
+             </form>
+             <input type="button" id="contactChange" value="Notfall-Kontakt ändern" />
+            <section>
+            
+            <section class="Fehler">
+                <span class="errorMessage" id="errorMessage"></span>
+            </section>
+        </section>
+		<!--
+		<footer class="button_bottom">
+				<button id="route_starten">
+				<p class="route">Route starten</p>
+				</button>
+		</footer>-->
+
+</div>
+
+<script type="text/javascript"> 
+var errorMessage = document.getElementById("errorMessage");
+while (errorMessage.firstChild){
+	errorMessage.removeChild(errorMessage.firstChild);
+}
+var backbutton = document.getElementById("route-header-btn-back");
+backbutton.addEventListener('click',back);
+function back(){
+	window.location = 'home.html';
+}
+
+	var ls = {
+		"ls" : localStorage,
+		"loadMyRoute" : function(){
+
+			return JSON.parse(this.ls["myRoute"]);
+
+		},
+		"saveOtherRoute": function(){
+			this.ls["myRoute"] = JSON.stringify(myRoute);
+		},
+		"loadMyContact" : function(){
+
+			return JSON.parse(this.ls["myContact"]);
+
+		},
+		"saveContact": function(){
+			this.ls["myContact"] = JSON.stringify(myContact);
+		}
+	}
+
+var myRoute;
+var myContact;
+
+if (localStorage.myRoute == undefined){
+
+	myRoute = {
+	"type":"eigeneRoute",
+	"object": {	
+				"routename": "",
+	       		"routeinfo": "",
+		        "routecode": "",
+		        "zielgebiet":"",
+				"userID":1,
+				"routeID" : 1,//ändern Wenn DB funktioniert
+				"gpxID": "",
+				"richtigeRichtung":true,
+				"coords":[]
+	
+				}
+
+	}
+	
+}else{
+
+myRoute = ls.loadMyRoute();
+
+}
+
+if (localStorage.myContact == undefined){
+
+	myContact = {
+	"type":"Notfallkontakt",
+	"object": {	
+				"Vorname": "",
+	       		"Nachname": "",
+		        "Telefonnummer": "" 
+				}
+
+	}
+	
+}else{
+
+myContact = ls.loadMyContact();
+
+}
+
+var form = document.getElementById("contactForm");
+form.vname.value = myContact.object.Vorname;
+form.nname.value = myContact.object.Nachname;
+form.tel.value = myContact.object.Telefonnummer;
+
+var ajax = {
+communicatorURL : "http://flock-0312.students.fhstp.ac.at/server/communicator.php?callback=meins",
+currentName : null,
+connectCommunicator : function(pname,json){
+
+	this.currentName = pname;
+	
+	var xmlhttp=new XMLHttpRequest();
+	var that = this;
+	
+	xmlhttp.onreadystatechange = function() {
+		if(xmlhttp.readyState==4){
+			console.log(that.currentName);
+			json=JSON.parse(xmlhttp.responseText);
+			that.render(that.currentName,json);
+	
+			//renderGetRouteAtResponse(json)  //daten an die funktion render übergeben (render muss man selbst programmieren)
+		}
+	 };
+	var jsonString = JSON.stringify(json);	
+	xmlhttp.open("POST", this.communicatorURL, true);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xmlhttp.send("json="+jsonString);
+
+
+
+},
+render : function(name,json){
+
+
+	if(name == "Notfallkontakt"){
+		if(json.success==true){
+			myContact.object.Vorname = document.getElementById("contactForm").vname.value;
+			myContact.object.Nachname = document.getElementById("contactForm").nname.value;
+			myContact.object.Telefonnummer = document.getElementById("contactForm").tel.value;
+			ls.saveContact();
+			window.location = "home.html";
+		}
+		else{
+			var message = document.createTextNode("Beim Eintragen des Notfallkontaktes ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut");
+			errorMessage.appendChild(message);
+		}
+		
+
+	}
+
+
+	} 
+
+}
+
+
+document.getElementById("contactChange").addEventListener("click", function(){
+		var formular=document.getElementById("contactForm");
+
+		var json = {
+			
+					"type":"Notfallkontakt",
+					"object": {	
+						"Vorname": formular.vname.value,
+						"Nachname": formular.nname.value,
+						"Telefonnummer": formular.tel.value
+					}		
+				}
+				
+				ajax.connectCommunicator(json.type,json);
+		
+		
+});
+
+
+
+
+if(myRoute.object.route_id != "")
+{
+	var d = document;
+
+	d.getElementById("route_starten").disabled=false;
+
+	d.getElementById("route_starten").addEventListener("click", function(){
+
+			var json = {
+		
+				"type":"RouteStarten",
+				"object": {	
+				"routeID":myRoute.object.routeID
+				}		
+			}
+
+			ajax.connectCommunicator(json.type,json);
+
+			window.location = "route_aktiv/main.html";
+
+	});
+	
+
+
+}else{
+
+	document.getElementById("route_starten").disabled=true;
+
+}
+</script>
+
+</body>
+</html>

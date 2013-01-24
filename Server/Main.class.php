@@ -158,7 +158,12 @@ class Main
 					$data=$ret;
 					break;
 			case 'getRouteById':
-					break;							
+					break;	
+			case 'stopRoute':
+					$ret=Main::routeStop($obj['object']);
+					$data=$ret;
+					break;
+					break;								
 			default: 
 					$data=array('success'=>false,'type'=>$type, 'data'=>$obj);
 					break;
@@ -174,7 +179,7 @@ class Main
 		
 		if(!is_string($con))
 		{	//
-		
+				//select all routes
 				$statement = $con->prepare("Select * from route join user on user_iduser=iduser");
 				$statement->execute(array($lat,$lon,$lat,$lon));
 				$result = $statement;
@@ -192,6 +197,8 @@ class Main
 					$data['routes'][$i]=array('id'=>$pRouteID,'name'=>$pRouteName,'ersteller'=>$pUserRoute,'routeInfo'=>$pRouteInfo,'routeCode'=>$pRouteCode,'predefinedRouteId'=>$predefinedRouteId,'richtigeRichtung'=>$prichtigeRichtung);
 					$data['success']=true;
 					
+					//****************
+					//select coords
 					$newquery = "Select latitude,longitude,accuracy,userName,battery,signalStrength from location join routeLoc on idlocation=location_idlocation join user on user_iduser=iduser where route_idroute=? ORDER BY idlocation ASC";
 					
 					$newstatement = $con->prepare($newquery);
@@ -207,6 +214,8 @@ class Main
 							//$locrow['latitude'].$locrow['longitude'];
 					}
 					
+					//***************
+					//Select Status
 					$statusQuery="select * from route_has_routeStatus inner join routeStatus on idrouteStatus=routeStatus_idrouteStatus join user on user_iduser=iduser where route_idroute=?";
 					$statusStatement = $con->prepare($statusQuery);
 					$statusStatement->execute(array($pRouteID));
@@ -215,6 +224,23 @@ class Main
 					while($statusRow = $statusResult->fetch(PDO::FETCH_ASSOC))
 					{	
 							$data['routes'][$i]['status'][]=array('description'=>$statusRow['description'],'timestamp'=>$statusRow['timestamp'],'user'=>$statusRow['userName']);	
+					}
+					
+					//***********
+					//Select predefinedPoints
+					$prequery = "Select latitude,longitude,pointNr from location join registeredRoute on location.idlocation=registeredRoute.idlocation where idroute=? ORDER BY pointNr ASC";
+					
+					$prestatement = $con->prepare($prequery);
+					$prestatement->execute(array($pRouteID));
+					$preresult = $prestatement;
+					
+					$x=0;
+					while($locrow = $preresult->fetch(PDO::FETCH_ASSOC))
+					{	
+							
+							$data['routes'][$i]['preCoords'][$x]=array('lat'=>$locrow['latitude'],'long'=>$locrow['longitude'],'pointNr'=>$locrow['pointNr']);
+							$x++;	
+							//$locrow['latitude'].$locrow['longitude'];
 					}
 					
 					$i++;
@@ -285,6 +311,39 @@ class Main
 		$ret=array('success'=>false);	
 		return $ret;
 		
+	}
+	public static function routeStop($obj)
+	{
+		$con = db_connect();
+		
+		if(!is_string($con))
+		{
+			$date = new DateTime();
+			$timestamp = date('Y-m-d H:i:s',$date->getTimestamp());
+			$query="insert into route_has_routeStatus (route_idroute, routeStatus_idrouteStatus, user_iduser,timestamp) values (?,?,?,?)";
+			$statement = $con->prepare($query);
+			  $statement->execute(array($obj['routeId'], 3,$obj['userID'],$timestamp));
+			  
+			if(!$obj['coords'])
+			{
+				$locCoords=$obj['coords'][0];
+				$query = "Insert into location (latitude,longitude, accuracy) values (?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($locCoords['lat'],$locCoords['lon'], $locCoords['accuracy']));
+				$locid = $con->lastInsertId();
+
+				$query="insert into routeLoc (user_iduser, route_idroute, location_idlocation, battery, signalStrength) values (?,?,?,?,?)";
+				$statement = $con->prepare($query);
+				$statement->execute(array($obj['userID'],$obj['routeId'],$locid,$obj['battery'],$obj['signalStrength']));
+				
+				$ret=array('success'=>true);	
+				return $ret;
+			}
+			
+			
+		}
+		$ret=array('success'=>false);	
+		return $ret;
 	}
 	public static function routeNotfall($obj)
 	{
