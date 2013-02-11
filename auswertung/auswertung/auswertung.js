@@ -127,7 +127,7 @@ function updateMapMarkers()
 			{
 			  routeValue.coords.foreach(function( ck, coordsValue ) {
 			  //console.log(coordsValue.lat+" "+coordsValue.long);
-			  markers.push(L.circle([coordsValue.lat,coordsValue.long], coordsValue.accu/4, {
+			  markers.push(L.circle([coordsValue.lat,coordsValue.long], coordsValue.accu, {
 				  color: 'red',
 				  fillColor: '#f03',
 				  fillOpacity: 0.1}));
